@@ -1,0 +1,352 @@
+/******** BREAKPOINTS ******/
+/****** 1.(1000px-640px)- Desktop layout *****/
+/****** 2.(640px-450px)- Tab/Mob layout *****/
+/****** 3.(450px-300px)- Mob layout *****/
+
+/***** generic css ****/
+html{margin:0;padding:0;}
+body{margin:0;padding:0;position:relative;font-size:12px;line-height:14px;font-family:arial;}
+a:hover,a:focus	{outline:none;}
+a 	{text-decoration:none;}
+img	{border:none;width:100%;height:auto;}
+p,div,h1,h2,h3,h4,ul	{margin:0;padding:0;}
+ul li{list-style-type:none;}
+.clear	{clear:both;line-height:1px;font-size:0px;}
+/***** generic css ends ****/
+/****** header ******/
+.topBar	{width:100%;background:#003471;}
+.topBarContent	{max-width:1000px;margin:0 auto;}
+.topLeftPart	{float:left;width:auto;}
+.topLeftPart .locationInfo p	{font-size:12px;color:#b7c3ca;line-height:36px;text-transform:italic;padding-left: 2%;}
+.topLeftPart .locationInfo p a	{font-size:12px;color:#b7c3ca;line-height:36px;text-transform:italic;}
+.topRightPart	{float:right;width:50%;}
+.topRightPart div	{float:right;padding:0 2% 0 0;}
+.topRightPart div.topBarText 		{width:14%;padding:0;text-align:center;}
+.topRightPart p a	{font-size:12px;color:#fff;line-height:36px;text-transform:uppercase;font-weight:bold;display:block;padding-right:0%;}
+.topRightPart .topBarIcon p a	{display:block;width:100%;padding-top:7px;line-height:26px;padding-right:0;line-height:1px;font-size:0px;}
+.topRightPart .cartCont a 	{}
+.topRightPart .favCont a 	{}
+.topRightPart .locationCont a 	{}
+.logoBar	{max-width:1000px;margin:0 auto;}
+.logoCont	{padding-left:1.5%;float:left; width: 221px;padding-top:10px;}
+.logoCont a	{display:block;height:47px;width:221px;line-height:1px;font-size:0px;}
+/***** navigation *******/
+.nav	{display:block;float:left;width:58%;margin-left:7%;padding-top: 0px;}
+.nav ul li	{display:block;float:left;width:18%;text-align:center;}
+.nav ul li.lastItem	{width:24%;}
+.nav ul li p a	{display:block;font-size:14px;line-height:70px;color:#000000;font-weight:bold;}
+.menuBttn	{display:none;}
+
+/***** navigation ends **/
+.utilityCont	{float:right;padding-top: 15px;width:10%;}
+.phoneCont 	{float:right;height:35px;width:35px;}
+.phoneCont a	{display:block;}
+.searchCont	{float:right;padding:0 12%;height:35px;width:35px;}
+.searchCont	a {display:block;}
+
+.header	{padding-bottom:0px;}
+/***** header ends *****/
+
+/****** homepage *******/
+.bannerCont	{background:url(../images/banner_main.jpg) 0 0 repeat-x;}
+.bannerContent	{max-width:1000px;margin:0 auto;}
+.bannerContent h2	{font-size:20px;line-height:24px;color:#000000;font-weight:bold;text-align:center;padding-top:35px;padding-bottom:35px;}
+.serItems	{float:left;width:15.5%;margin:0 .5%;min-height:150px;padding-bottom: 20px;}
+.serItem7 .serIconCont a	{padding-top:10px;}
+.serItem10 .serIconCont a 	{padding-top:5px;}
+.serIconCont	{min-height:110px;}
+.serIconCont a	{display:block;line-height:1px;font-size:0px;text-align: center;}
+.serIconCont a img	{width:auto;height:auto;}
+.serIconText p a	{display:block;font-size:14px;line-height:16px;color:#000000;text-align:center;font-weight:bold;}
+.serIconText	{width:82%;margin:0 auto;}
+
+/*  Harshika 15/07/15 */
+.askdocCont		{background:url(../images/index1000_02.jpg) 0 0 no-repeat;max-width:1000px;margin:0 auto;}
+.askdocContent	{background: rgba(0, 52, 213, 0.31) none repeat scroll 0 0;float: right;margin-bottom: 7%;margin-top: 6%;width: 40%;}
+.askdocContent h2{font-family:Arial, Helvetica, sans-serif; font-size:36px; color:#ffffff; line-height:38px; opacity: 1.00; filter: alpha(opacity=100);  padding-left:10%; padding-top:10%;}
+.askdocContent h5{font-family:Arial, Helvetica, sans-serif; font-size:24px; color:#ffffff; line-height:26px; opacity: 1.00; filter: alpha(opacity=100);  padding-left:10%; padding-top:1%; text-decoration:none; margin-top:1%; font-weight:500; margin-bottom:3%;}
+.askdocContent query{ display:block; margin-top:1%; padding:10px;opacity: 1.00; filter: alpha(opacity=100);background-color:#ffffff; z-index:1;}
+.askdocContent form{ text-align:center;}
+.query textarea{width:80%; min-height:60%; min-height:120px; resize:none;}
+.selection {margin-top:5%; width:80%;}
+.selection option{ height:25px;font-size:14px;line-height:16px;}
+.button{ color:#ffffff; background-color:#003471; height:50px; width:200px;opacity: 1.00; filter: alpha(opacity=100); margin:5% auto;border:0; border-radius:5px; font-size:18px; font-weight:600; box-shadow: 0px 0px 5px white; margin-bottom:5%;}
+.askdocContent h6{ color:#ffffff; font-size:14px;opacity: 1.00; filter: alpha(opacity=100); margin:0 auto; margin-bottom:10%;text-shadow: 4px 4px 5px blue;  }
+/*  /Harshika 15/07/15 */
+
+.blogCont		{max-width:1000px;margin:0 auto;}
+.blogCont h2		{font-size:20px;line-height:24px;color:#000000;font-weight:bold;text-align:center;padding:20px 0;}
+.blogCont .serItems	{width:32%;}
+.blogCont .serItems .serIconCont	{padding-bottom:10px;min-height: 145px;}
+.blogCont .serItems .serIconText	{width:68%;}
+.whyusContent	{max-width:1000px;margin:0 auto;background:url(../images/buildings.png) center bottom no-repeat;height:466px;}
+.whyusCont	{background:url(../images/whyus_bck.jpg) 0 0 repeat-x;}
+.whyusContent h2{font-size:30px;line-height:34px;color:#fff;font-weight:bold;text-align:center;padding:35px 0;}
+.whyusContent p	{font-size:18px;line-height:24px;color:#fff;text-align:center;padding: 10px 1%;}
+.whyusContent p.firstPara	{padding:0px 10% 10px;}
+.whyusContent p.thirdPara	{padding: 10px 7%;}
+.customerView	{background:#ebebeb;padding: 0px 0 20px;}
+.custViewContent	{max-width:1000px;margin:0 auto;}
+.custViewContent h2	{font-size:30px;line-height:34px;color:#05275e;font-weight:bold;text-align:center;padding:20px 0;}
+.custViewContent h2	span {color:#f4151a;}
+.custImg a 	{display:block;}
+.custImg	{float:left;width:20%;}
+.customers	{padding:0 5%;width:70%;margin:0 auto;}
+.footerContent	{max-width:1000px;margin:0 auto;padding:20px 0 0 0;position:relative;}
+.footRow	{width:23%;float:left;padding:0 1%;}
+.footRow h2	{text-align:center;font-size:18px;line-height:24px;color:#000;font-weight:bold; padding-bottom: 20px;}
+.footRow1 h2	{text-align:left;}
+.firstList 	{float:left;width:40%}
+.footRow ul li {display:block;padding-bottom:20px;}
+.secondList ul li	{padding-bottom:20px;}
+.footRow ul li p a {font-size:14px;line-height:16px;color:#000;}
+.secondList 	{float:left;width:60%}
+.copyrightText	{background:#959595;}
+.copyrightTextCont	{max-width:1000px;margin:0 auto;}
+.copyrightTextCont p 	{font-size:14px;line-height:16px;color:#000;text-align:center;padding: 7px 0;}
+.footRow2 p,.newsletter p 	{font-size:12px;line-height:16px;color:#000;background:url(../images/mail_icon.png) 0 5px no-repeat;padding: 0 0 10px 16%;}
+.textInput input {color:#000;border:none;font-size:14px;line-height:16px;width: 100%;}
+.textInput	{border:1px solid #d6d6d6;border-radius:5px; padding: 5%;width: 90%;margin-bottom: 12px;}
+.submitBttn	{text-align:center;}
+.submitBttn input{background:none;border:none;background-color:#2b96cc;color:#fff;font-weight:bold;font-size:14px;line-height:40px;text-align:center;width:60%;border-radius:6px;cursor: pointer;}
+.shadow {-moz-box-shadow:inset 0 0 6px #387290;-webkit-box-shadow:inset 0 0 6px #387290;box-shadow:inset 0 0 6px #387290;}
+.footRow4 h3,.touchLink h3	{font-size:14px;line-height:16px;color:#000;padding: 0 0 10px;}
+.footRow4 p,.touchLink p	{font-size:14px;color:#000;line-height: 20px;padding: 0 0 15px 12%;}
+.footRow4 p.firstPara,.touchLink p.firstPara	{background:url(../images/footer_home.png) 0 0 no-repeat;}
+.footRow4 p.secondPara,.touchLink p.secondPara	{background:url(../images/footer_web.png) 0 0 no-repeat;}
+.footRow4 p.thirdPara,.touchLink p.thirdPara	{background:url(../images/footer_mob.png) 0 0 no-repeat;}
+.footRow4 p.thirdPara a,.touchLink p.thirdPara a	{line-height:24px;}
+.footRow4 p a,.touchLink p a	{font-size:14px;line-height:16px;color:#000;}
+.shareIcons	{float:left;padding-left: 2%;padding-bottom: 10px;}
+.shareIcons a 	{display:block;height:25px;width:27px;line-height:1px;font-size:0px;}
+.onlyMob	{display:none;}
+.footRow2,.footRow3,.footRow4	{display:block;}
+.topLeftPart .locationInfo p  span{display:inline;}
+.shareIconsCont		{float:right;padding: 0 1%;width: 23%;}
+/***** homepage ends ***/
+
+/**** css for ambulancePage (added by ab on 24aug15) ****/
+.ambulancePage	{background-color: #e9eaed;}
+.ambPageContent	{max-width:1000px;margin:0 auto;padding:20px 0;	}
+.ambLeftCont	{width:70%;float:left;}
+.ambRightCont	{width:28%;float:right;}
+.forAmb .textInput	{float:left;width:24%;margin-right:1%;padding:0%;margin-bottom:0; }
+.forAmb .submitBttn	{float:left;width:20%;}		
+.forAmb .submitBttn input	{line-height:36px;}		
+.forAmb .textInput.pinCode	{margin-bottom: 0px;padding: 9px 1.4%;}		
+.submitBttn input 		{width:100%;}
+.forAmb .textInput.locationCont	{border:none;}
+.forAmb .locationCont select	{padding:10px 2%;width:100%;}
+.ambulanceservicedata		{margin-top:20px;background:#fff;}
+.forAmb		{background:#fff;padding:20px 2%;}
+.ambulancePage .left1_data {float: left;}
+.ambulancePage .middle_data {float: left;padding: 0px 2% 0 2%;width: 50%;}
+.ambulancePage .ambu_name {color: #49b1d1;font-size: 16px;line-height:20px;}
+.ambulancePage .ambu_area p {color: #82878e;font-size: 12px;line-height:20px;font-weight: bold;padding: 8px 0 0;}
+.ambulancePage .ambu_add p	{color: #82878e;font-size: 12px;line-height:16px;}
+.ambulancePage .right_data	{float:right;margin-right:2%;width:20%}
+.ambulancePage .right_data a	{display:block;color: #82878e;text-decoration:none;font-size:12px;line-height:14px;}
+.ambulancePage .right_data .userReviewCont a	{background:url(../images/ic_review_small.png) 0 0 no-repeat;line-height: 15px; padding: 0 0 0 15%;}
+.ambulancePage .contactCont	{padding:10px 0 10px 0px;}
+.ambulancePage .right_data .contactCont a	{background:url(../images/phone_icon.png) 0 0 no-repeat;background-size:10% auto;padding: 0 0 0 15%;}
+.ambulancePage .detailsCont	{padding:2%;}
+.submitBttn.enquireCont input {background:rgb(119, 212, 74);} 
+/****** css for ambulancePage ends *****/
+
+
+
+/**** css for mobile devices ****/
+@media all and (max-device-width: 639px){ 
+/****** homepage ******/
+.topRightPart p a {padding-right: 5%;}
+.topRightPart {width: 43%;}
+.topRightPart div {padding: 0 3% 0 0;}
+.nav {display:none;}
+.menuBttn	{display:block;float:right;width:15%;padding-top:22px;}
+.menuBttn p a	{display:block;font-size:12px;line-height:28px;color:#fff;font-weight:bold;background:#000;border-radius:8px;width:100%;text-align:center;}
+.utilityCont {width: 14%;padding-top: 23px;}
+.searchCont a,.phoneCont a  {width: 75%;}
+.searchCont {padding: 0 2%;}
+.header {padding-bottom: 8px;}
+.bannerCont {background: url("../images/banner_main_mob.jpg") no-repeat scroll 0 0;}
+.bannerContent h2 {font-size: 13px;line-height: 16px;padding-bottom: 20px;padding-top: 20px;}
+.serIconCont a img {width: auto;}
+.serItems {margin: 0 5.6%;width: 22%;}
+.serIconCont {min-height: 102px;}
+.serItems {min-height: 140px;padding:0 5.6% 10px;margin:0;}
+.serIconText p a {font-size: 12px;line-height: 14px;}
+.serIconText {width: 86%;}
+.blogCont .serItems {float:none;text-align: center;width: auto;padding-bottom: 30px;}
+.whyusContent h2 {font-size: 24px;padding: 20px 0;}
+.whyusContent p {font-size: 14px; line-height: 20px;padding: 10px 4%;}
+.custViewContent h2 {font-size: 20px;line-height: 24px;}
+.custImg { width: 33%;}
+.footRow1 {padding-left: 8%;width: 40%;padding-right: 6%;display:none;}
+.onlyMob	{display:block;}
+.appsDwnld a	{line-height:1px;font-size:0px;display:block;}
+.appsDwnld 	{display:block;width: 42.5%;float:left;padding-right: 7%;}
+.appBttns	{width:95%;padding-left:5%;padding-bottom:20px;}
+.footRow2,.footRow3,.footRow4	{display:none;}
+.rightColFooter	{width:46%;float:left;}
+.shareIconsCont		{width: 46%;padding:0;}
+.clickBoxes  	{border:1px solid #000;border-bottom:none;}
+.clickBoxes a	{display:block;width:100%;text-align:center;font-size: 16px;line-height: 46px;color:#000;font-weight:bold;background: url("../images/plus_sign.jpg") no-repeat scroll 7% 12px;}
+.clickBoxes.thirdBox	{border-bottom:1px solid #000;}
+.shareIcons {padding-bottom: 10px;padding-right: 2%;padding-top: 10px;padding-left:0;}
+.topLeftPart .locationInfo p  span{display:inline;}
+.topRightPart div.topBarText {width:25%}
+.clickBoxes.active a 	{background:url("../images/minus_sign.jpg") no-repeat scroll 7% 12px;}
+.leftColFooter {padding-left: 8%;padding-right: 6%;width: 40%;height:243px;}
+/*  Harshika 15/07/15 */
+.askdocContent{ width:100%;margin:0;}
+.askdocContent h6 { font-size:18px; line-height:20px;}
+/*  /Harshika 15/07/15 */
+/****** homepage ends ******/
+
+/**** css for ambulancePage (added by ab on 24aug15) ****/
+.ambRightCont {float:none;width:auto;}
+.ambLeftCont {float:none;width:auto;}
+.ambulancePage .middle_data {width: 45%;}
+
+/****** css for ambulancePage ends *****/
+
+}
+
+
+
+@media all and (min-device-width: 450px) and (max-device-width: 530px){
+.utilityCont {width:17%;}
+.ambulancePage .right_data { margin-right: 0; width: 22%;}/** added by ab on 24aug15 ***/
+.ambulancePage .middle_data {width: 41%;}/** added by ab on 24aug15 ***/
+.submitBttn.enquireCont input {font-size:12px;}/** added by ab on 24aug15 ***/
+
+}
+
+
+
+@media all and (max-device-width: 450px){
+.topLeftPart .locationInfo p  span{display:none;}
+.topRightPart {width: 50%;}
+.topRightPart p a {padding-right: 8%;font-size:11px;}
+.topRightPart div {padding: 0 1% 0 0;}
+.logoCont a {width: 100%;}
+.logoCont {width:50%}
+.utilityCont {width: 25%;}
+.menuBttn {padding-top: 25px;}
+.menuBttn p a {font-size: 11px;line-height: 24px;}
+.serIconCont a img {width: 100%;}
+.serIconCont { min-height: 80px;}
+.serIconText p a {font-size: 11px;}
+.blogCont .serIconText p a {font-size: 14px;line-height:16px;}
+.blogCont h2 {padding: 30px 0 20px;}
+.whyusContent h2 {font-size: 18px;padding: 10px 0;}
+.whyusContent p {font-size: 12px;line-height: 16px;}
+.custViewContent h2 {font-size: 18px;}
+.footRow h2 {font-size: 16px;}
+.footRow1 {padding-left: 3%;padding-right: 3%;width: 50%;}
+.footRow ul li p a {font-size: 12px;}
+.rightColFooter {width: 44%;}
+.clickBoxes a {font-size: 11px;line-height: 39px;background-size: 10% auto;}
+.clickBoxes.active a {background-size: 10% auto;} /*added on 23aug2015 by ab */
+.footRow4 p,.touchLink p	{font-size:12px;color:#000;line-height: 16px;padding: 0 0 15px 20%;}/*added on 23aug2015 by ab */
+.submitBttn input {width:70%;font-size:11px;}/*added on 23aug2015 by ab */
+.newsletter p {padding: 0 0 10px 22%;}/*added on 23aug2015 by ab */
+.copyrightTextCont p {font-size: 11px;}
+.serItem10 a img,.serItem11 a img,.serItem12 a img {width: auto;}
+
+.topRightPart div.topBarText {width:29%}
+.shareIconsCont {width:44%;}
+
+/*  Harshika 15/07/15 */
+.askdocContent{ width:100%;}
+.selection,select option{font-size:12px;line-height:14px;}
+.askdocContent h6 { font-size:14px; line-height:16px;}
+/*  /Harshika 15/07/15 */
+
+/**** css for ambulancePage (added by ab on 24aug15) ****/
+.forAmb .textInput {float:none;width:auto;margin-bottom:10px;}
+.forAmb .textInput.pinCode {margin-bottom: 10px;}
+.forAmb .submitBttn {float:none;text-align:center;width:auto;}
+.forAmb .submitBttn input {font-size: 18px;line-height: 36px;width: 40%;}
+.ambulancePage .left1_data {float: none;text-align:center;}
+.ambulancePage .left1_data img{width:40%;}
+.ambulancePage .middle_data {float:none;text-align:center;width:auto;}
+.ambulancePage .ambu_add p {font-size: 18px;line-height: 20px;}
+.ambulancePage .ambu_area p {font-size: 20px;line-height: 22px;}
+.ambulancePage .ambu_name {font-size: 22px;line-height: 28px;}
+.ambulancePage .right_data {float: none;width:auto;text-align:center;padding-top:30px;}
+.ambulancePage .right_data a {font-size:18px;line-height:20px;}
+.ambulancePage .right_data .userReviewCont a {padding:0;background-position:26% 0;}
+.ambulancePage .right_data .contactCont a {padding:0;background-position:26% 0;background-size:5% auto;}
+.ambulancePage .contactCont {padding: 10px 0;}
+.ambulancePage .detailsCont {padding: 4%;}
+.submitBttn.enquireCont input {width:45%;font-size:18px;}
+/****** css for ambulancePage ends *****/
+
+}
+
+/**** css for mobile devices ends ****/
+
+
+
+/**** patches *****/
+@media all and (min-device-width: 810px) and (max-device-width: 940px){ 
+.nav {margin-left: 3%;}
+.searchCont { padding: 0 4%;}
+.ambulancePage .middle_data {padding: 0 0 0 2%;}/** added by ab on 24aug15 ***/
+
+}
+
+@media all and (min-device-width: 640px) and (max-device-width: 810px){  
+.nav ul li p a {font-size: 11px;}
+.nav {margin-left: 1%;width: 53%;}
+.searchCont {width:28px;height:28px;padding: 0 4%;}
+.phoneCont {width:28px;height:28px;}
+.nav ul li {width:16%}
+.nav ul li.firstItem	{width: 22%;}
+.nav ul li.lastItem {width: 27%;}
+.logoCont {padding-left: 1%;}
+.serItem1 a img,.serItem2 a img{width:100%;}
+.blogCont .serItems .serIconText {width: 90%;}
+.serIconText p a {font-size: 12px}
+.blogCont .serIconCont a img {width:100%;}
+.whyusContent p {font-size: 16px;}
+.footRow ul li p a {font-size: 12px;}
+.footRow {padding: 0 0 0 1%;width: 24%;}
+.firstList {width: 37%;}
+.secondList {width: 63%;}
+.footRow2 p {padding: 0 0 10px 20%;}
+.footRow4 p a {font-size: 12px;}
+.footRow4 p {font-size: 12px;padding-left:15%;}
+.submitBttn input {font-size: 12px;}
+.footRow h2 {font-size: 15px;}
+.topRightPart div.topBarText	{width:16%;}
+/*  Harshika 15/07/15 */
+.askdocContent{ width:60%;}
+/*  /Harshika 15/07/15 */
+
+.ambulancePage .middle_data {width: 41%;} /** added by ab on 24aug15 ***/
+.ambulancePage .right_data {width: 22%;margin-right:0;}/** added by ab on 24aug15 ***/
+
+}
+
+@media all and (max-device-width: 315px){
+.topRightPart p a {font-size: 9px;}
+.footRow2 p, .newsletter p {padding: 0 0 10px 30%;font-size:11px}/*added on 23aug2015 by ab */
+}
+
+@media all and (min-device-width: 400px) and (max-device-width: 450px){
+.serItem7 a img,.serItem8 a img,.serItem9 a img {width:auto;}
+.ambulancePage .right_data .userReviewCont a {background-position:31% 0;}/** added by ab on 24aug15 ***/
+.ambulancePage .right_data .contactCont a {background-position:31% 0;}/** added by ab on 24aug15 ***/
+}
+/***** patches end ***/
+
+
+/*** 16-09-2015 Added By Punit****/
+.division{
+	width:100%;
+	height:5px;
+	background-color: #E9EAED;	
+}
+/*** 16-09-2015 By Punit****/
