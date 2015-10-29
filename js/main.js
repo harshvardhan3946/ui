@@ -19,7 +19,9 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/equipment-on-rent", {templateUrl: "pages/equipment-on-rent.html", controller: "PageCtrl"})
         .when("/fix-an-appointment", {templateUrl: "pages/fix-an-appointment.html", controller: "PageCtrl"})
         .when("/helping-hand", {templateUrl: "pages/helping-hand.html", controller: "PageCtrl"})
-        // else 404
+        .when("/hospital-finder", {templateUrl: "pages/hospital-finder.html", controller: "PageCtrl"})
+        .when("/pathlab", {templateUrl: "pages/pathlab.html", controller: "PageCtrl"})
+        .when("/inhouse", {templateUrl: "pages/inhouse.html", controller: "PageCtrl"})
         .otherwise("/404", {templateUrl: "pages/404.html", controller: "PageCtrl"});
 }]);
 
