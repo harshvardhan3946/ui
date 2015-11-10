@@ -7,17 +7,22 @@
         <div class="ambPageContent">
             <div class="ambLeftCont">
                 <div class="forAmb"><!-- form -->
-                    <div class="textInput locationCont">
-                        <select name="location" id="location" required="">
-                            <option value="" style="font-weight:bold;">City</option>
-                            <option value="Delhi">Delhi</option>
-                            <option value="Faridabad">Faridabad</option>
-                            <option value="Ghaziabad">Ghaziabad</option>
-                            <option value="Gurgaon">Gurgaon</option>
-                            <option value="Noida">Noida</option>
-                        </select>
+                    <div class="textInputEquip locationCont">
+                        <!-- parsing address components -->
+                        <input vs-google-autocomplete="options"
+                               ng-model="address.name"
+                               vs-city="address.components.city"
+                               vs-state="address.components.state"
+                               vs-post-code="address.components.postCode"
+                               vs-latitude="address.components.location.lat"
+                               vs-longitude="address.components.location.long"
+                               type="text"
+                               name="address"
+                               id="address"
+                               class="form-control"
+                               placeholder="Search Address">
                     </div>
-                    <div class="textInput locationCont serviceCont">
+                    <div class="textInputEquip locationCont serviceCont">
                         <select name="service" id="service" required="">
                             <option value="" style="font-weight:bold;">Equipment</option>
                             <option value="1">OXYGEN CONCENTRATOR</option>
@@ -46,9 +51,6 @@
                             <option value="38">SYRINGEYPUMP</option>
                             <option value="39">BEDYRECLINER</option>
                         </select>
-                    </div>
-                    <div class="textInput pinCode">
-                        <input type="text" name="pinCode" placeholder="Pin Code"/>
                     </div>
                     <div class="submitBttn">
                         <input class="shadow" type="submit" value="SEARCH"/>

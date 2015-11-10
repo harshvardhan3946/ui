@@ -130,7 +130,9 @@ ul li{list-style-type:none;}
 .ambPageContent	{max-width:1000px;margin:0 auto;padding:20px 0;	}
 .ambLeftCont	{width:70%;float:left;}
 .ambRightCont	{width:28%;float:right;}
-.forAmb .textInput	{float:left;width:24%;margin-right:1%;padding:0%;margin-bottom:0; }
+.forAmb .textInput	{float:left;width:77%;margin-right:1%;padding:0%;margin-bottom:0; }
+.forAmb .textInputEquip	{float:left;width:38%;margin-right:1%;padding:0%;margin-bottom:0; }
+.forAmb .textInputEquip	input#address{border: none; margin-top: 4%;}
 .forAmb .submitBttn	{float:left;width:20%;}		
 .forAmb .submitBttn input	{line-height:36px;}		
 .forAmb .textInput.pinCode	{margin-bottom: 0px;padding: 9px 1.4%;}		
