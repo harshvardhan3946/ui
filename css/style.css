@@ -351,4 +351,6 @@ ul li{list-style-type:none;}
 	height:5px;
 	background-color: #E9EAED;	
 }
-/*** 16-09-2015 By Punit****/
+.pac-container:after{
+    content:none !important;
+}

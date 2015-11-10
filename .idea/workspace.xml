@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd94b803-76bd-454a-b886-328576373793" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/vs-google-autocomplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ambulance-services.html" afterPath="$PROJECT_DIR$/pages/ambulance-services.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blood-banks.html" afterPath="$PROJECT_DIR$/pages/blood-banks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/doctor-on-call.html" afterPath="$PROJECT_DIR$/pages/doctor-on-call.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/equipment-on-rent.html" afterPath="$PROJECT_DIR$/pages/equipment-on-rent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fix-an-appointment.html" afterPath="$PROJECT_DIR$/pages/fix-an-appointment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/helping-hand.html" afterPath="$PROJECT_DIR$/pages/helping-hand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/hospital-finder.html" afterPath="$PROJECT_DIR$/pages/hospital-finder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/inhouse.html" afterPath="$PROJECT_DIR$/pages/inhouse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/pathlab.html" afterPath="$PROJECT_DIR$/pages/pathlab.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dawaaii_core_ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,6 +33,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.5">
               <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="353" column="0" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,8 +95,8 @@
         <option value="$PROJECT_DIR$/pages/inhouse.html" />
         <option value="$PROJECT_DIR$/pages/pathlab.html" />
         <option value="$PROJECT_DIR$/pages/equipment-on-rent.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -179,6 +173,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dawaaii_core_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dawaaii_core_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -481,12 +489,12 @@
       <workItem from="1446386400608" duration="1436000" />
       <workItem from="1446462213921" duration="311000" />
       <workItem from="1446811668071" duration="39000" />
-      <workItem from="1447160642431" duration="3870000" />
+      <workItem from="1447160642431" duration="3992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14047000" />
+    <option name="totallyTimeSpent" value="14169000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1278" height="773" extended-state="6" />
@@ -873,18 +881,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="48" selection-start-line="135" selection-start-column="48" selection-end-line="135" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/ambulance-services.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="353" column="0" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
           <folding />
         </state>
       </provider>
