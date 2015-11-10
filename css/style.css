@@ -108,7 +108,7 @@ ul li{list-style-type:none;}
 .textInput input {color:#000;border:none;font-size:14px;line-height:16px;width: 100%;}
 .textInput	{border:1px solid #d6d6d6;border-radius:5px; padding: 5%;width: 90%;margin-bottom: 12px;}
 .submitBttn	{text-align:center;}
-.submitBttn input{background:none;border:none;background-color:#2b96cc;color:#fff;font-weight:bold;font-size:14px;line-height:40px;text-align:center;width:60%;border-radius:6px;cursor: pointer;}
+.submitBttn button{background:none;border:none;background-color:#2b96cc;color:#fff;font-weight:bold;font-size:14px;line-height:40px;text-align:center;width:60%;border-radius:6px;cursor: pointer;}
 .shadow {-moz-box-shadow:inset 0 0 6px #387290;-webkit-box-shadow:inset 0 0 6px #387290;box-shadow:inset 0 0 6px #387290;}
 .footRow4 h3,.touchLink h3	{font-size:14px;line-height:16px;color:#000;padding: 0 0 10px;}
 .footRow4 p,.touchLink p	{font-size:14px;color:#000;line-height: 20px;padding: 0 0 15px 12%;}
@@ -134,9 +134,9 @@ ul li{list-style-type:none;}
 .forAmb .textInputEquip	{float:left;width:38%;margin-right:1%;padding:0%;margin-bottom:0; }
 .forAmb .textInputEquip	input#address{border: none; margin-top: 4%;}
 .forAmb .submitBttn	{float:left;width:20%;}		
-.forAmb .submitBttn input	{line-height:36px;}		
+.forAmb .submitBttn button	{line-height:36px;}
 .forAmb .textInput.pinCode	{margin-bottom: 0px;padding: 9px 1.4%;}		
-.submitBttn input 		{width:100%;}
+.submitBttn button 		{width:100%;}
 .forAmb .textInput.locationCont	{border:none;}
 .forAmb .locationCont select	{padding:10px 2%;width:100%;}
 .ambulanceservicedata		{margin-top:20px;background:#fff;}
@@ -152,7 +152,7 @@ ul li{list-style-type:none;}
 .ambulancePage .contactCont	{padding:10px 0 10px 0px;}
 .ambulancePage .right_data .contactCont a	{background:url(../images/phone_icon.png) 0 0 no-repeat;background-size:10% auto;padding: 0 0 0 15%;}
 .ambulancePage .detailsCont	{padding:2%;}
-.submitBttn.enquireCont input {background:rgb(119, 212, 74);} 
+.submitBttn.enquireCont button {background:rgb(119, 212, 74);}
 /****** css for ambulancePage ends *****/
 
 
@@ -220,7 +220,7 @@ ul li{list-style-type:none;}
 .utilityCont {width:17%;}
 .ambulancePage .right_data { margin-right: 0; width: 22%;}/** added by ab on 24aug15 ***/
 .ambulancePage .middle_data {width: 41%;}/** added by ab on 24aug15 ***/
-.submitBttn.enquireCont input {font-size:12px;}/** added by ab on 24aug15 ***/
+.submitBttn.enquireCont button {font-size:12px;}/** added by ab on 24aug15 ***/
 
 }
 
@@ -251,7 +251,7 @@ ul li{list-style-type:none;}
 .clickBoxes a {font-size: 11px;line-height: 39px;background-size: 10% auto;}
 .clickBoxes.active a {background-size: 10% auto;} /*added on 23aug2015 by ab */
 .footRow4 p,.touchLink p	{font-size:12px;color:#000;line-height: 16px;padding: 0 0 15px 20%;}/*added on 23aug2015 by ab */
-.submitBttn input {width:70%;font-size:11px;}/*added on 23aug2015 by ab */
+.submitBttn button {width:70%;font-size:11px;}/*added on 23aug2015 by ab */
 .newsletter p {padding: 0 0 10px 22%;}/*added on 23aug2015 by ab */
 .copyrightTextCont p {font-size: 11px;}
 .serItem10 a img,.serItem11 a img,.serItem12 a img {width: auto;}
@@ -269,7 +269,7 @@ ul li{list-style-type:none;}
 .forAmb .textInput {float:none;width:auto;margin-bottom:10px;}
 .forAmb .textInput.pinCode {margin-bottom: 10px;}
 .forAmb .submitBttn {float:none;text-align:center;width:auto;}
-.forAmb .submitBttn input {font-size: 18px;line-height: 36px;width: 40%;}
+.forAmb .submitBttn button {font-size: 18px;line-height: 36px;width: 40%;}
 .ambulancePage .left1_data {float: none;text-align:center;}
 .ambulancePage .left1_data img{width:40%;}
 .ambulancePage .middle_data {float:none;text-align:center;width:auto;}
@@ -282,7 +282,7 @@ ul li{list-style-type:none;}
 .ambulancePage .right_data .contactCont a {padding:0;background-position:26% 0;background-size:5% auto;}
 .ambulancePage .contactCont {padding: 10px 0;}
 .ambulancePage .detailsCont {padding: 4%;}
-.submitBttn.enquireCont input {width:45%;font-size:18px;}
+.submitBttn.enquireCont button {width:45%;font-size:18px;}
 /****** css for ambulancePage ends *****/
 
 }
@@ -320,7 +320,7 @@ ul li{list-style-type:none;}
 .footRow2 p {padding: 0 0 10px 20%;}
 .footRow4 p a {font-size: 12px;}
 .footRow4 p {font-size: 12px;padding-left:15%;}
-.submitBttn input {font-size: 12px;}
+.submitBttn button {font-size: 12px;}
 .footRow h2 {font-size: 15px;}
 .topRightPart div.topBarText	{width:16%;}
 /*  Harshika 15/07/15 */

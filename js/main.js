@@ -12,7 +12,7 @@
     app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
             .when("/", {templateUrl: "pages/home.html", controller: "PageCtrl"})
-            .when("/ambulance-services", {templateUrl: "pages/ambulance-services.html", controller: "PageCtrl"})
+            .when("/ambulance-services", {templateUrl: "pages/ambulance-services.html", controller: "AmbulanceCtrl"})
             .when("/blood-banks", {templateUrl: "pages/blood-banks.html", controller: "PageCtrl"})
             .when("/doctor-on-call", {templateUrl: "pages/doctor-on-call.html", controller: "PageCtrl"})
             .when("/equipment-on-rent", {templateUrl: "pages/equipment-on-rent.html", controller: "PageCtrl"})
@@ -25,9 +25,30 @@
     }]);
 
     app.controller('PageCtrl', function ($scope) {
+
+    });
+
+    app.controller('AmbulanceCtrl', function ($scope, $http) {
+        $scope.ambulances = {};
+
+        var headers = {
+            "Authorization": "Basic ZGF3YWFpaTokMmEkMTEkZ3hwbmV6bVlmTkpSWW53L0VwSUs1T2UwOFRsd1pEbWNtVWVLa3JHY1NHR0hYdldheFV3UTI=",
+            "Content-Type": "application/json"
+        };
+
+        $http.get('http://localhost:8080/api/rest/ambulances', {
+            headers: headers
+        }).success(function (response) {
+            this.ambulances = response.data.Ambulances;
+            console.log(this.ambulances);
+        }).error(function (error) {
+            console.log(error);
+        });
+
         $scope.options = {
             componentRestrictions: {country: 'IN'}
         };
+
         $scope.address = {
             name: '',
             components: {
@@ -39,6 +60,11 @@
                     long: ''
                 }
             }
+        };
+
+        $scope.fetchData = function () {
+            console.log("user asking to search " + this.address.components.city + ", " + this.address.components.state + ", " + this.address.components.postCode + ", " + this.address.components.location.lat + ", " + this.address.components.location.long);
+
         };
     });
 })();

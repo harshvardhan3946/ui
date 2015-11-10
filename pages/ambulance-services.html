@@ -6,29 +6,31 @@
         <div class="ambPageContent">
             <div class="ambLeftCont">
                 <div class="forAmb"><!-- form -->
-                    <div class="textInput locationCont">
-                        <!-- parsing address components -->
-                        <input vs-google-autocomplete="options"
-                               ng-model="address.name"
-                               vs-city="address.components.city"
-                               vs-state="address.components.state"
-                               vs-post-code="address.components.postCode"
-                               vs-latitude="address.components.location.lat"
-                               vs-longitude="address.components.location.long"
-                               type="text"
-                               name="address"
-                               id="address"
-                               class="form-control"
-                               placeholder="Search Address">
-                    </div>
-                    <div class="submitBttn">
-                        <input class="shadow" type="submit" value="SEARCH"/>
-                    </div>
-                    <div class="clear"></div>
+                    <form name="form" ng-submit="form.address.$dirty && fetchData()" role="form">
+                        <div class="textInput locationCont">
+                            <!-- parsing address components -->
+                            <input vs-google-autocomplete="options"
+                                   ng-model="address.name"
+                                   vs-city="address.components.city"
+                                   vs-state="address.components.state"
+                                   vs-post-code="address.components.postCode"
+                                   vs-latitude="address.components.location.lat"
+                                   vs-longitude="address.components.location.long"
+                                   type="text"
+                                   name="address"
+                                   id="address"
+                                   class="form-control"
+                                   placeholder="Search Address">
+                        </div>
+                        <div class="submitBttn">
+                            <button type="submit" class="shadow">SEARCH</button>
+                        </div>
+                        <div class="clear"></div>
+                    </form>
                 </div>
                 <!-- /form -->
                 <!-- ambulanceservicedata -->
-                <div class="ambulanceservicedata">
+                <div class="ambulanceservicedata" ng-cloak>
                     <div class="detailsCont">
                         <div class="left1_data">
                             <img src="images/ambulance.png" alt="">
@@ -52,8 +54,7 @@
                                 <a href="#">22-61618141</a>
                             </div>
                             <div class="submitBttn enquireCont">
-                                <input id="abm_enquire_btn<?php echo $ambulance_id; ?>" class="shadow" type="button"
-                                       value="Enquire Now"/>
+                                <button id="" class="shadow">Enquire Now</button>
                             </div>
                         </div>
                         <div class="clear"></div>
