@@ -4,9 +4,17 @@
         .controller('AmbulanceCtrl', function ($scope, $http) {
 
             $scope.ambulances = {};
+            $scope.userLocation = {latitude: 28.612912, longitude: 77.2295097};
 
             $scope.init = function () {
-                alert($scope.userLocation.latitude);
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function (position) {
+                        $scope.userLocation.latitude = position.coords.latitude;
+                        $scope.userLocation.longitude = position.coords.longitude;
+                        console.log($scope.userLocation.latitude + "," + $scope.userLocation.longitude);
+                    });
+                };
+
                 var headers = {
                     "Authorization": "Basic ZGF3YWFpaTokMmEkMTEkZ3hwbmV6bVlmTkpSWW53L0VwSUs1T2UwOFRsd1pEbWNtVWVLa3JHY1NHR0hYdldheFV3UTI=",
                     "Content-Type": "application/json"
@@ -75,8 +83,8 @@
             ];
 
             $scope.map = {
-                center: $scope.userLocation ? $scope.userLocation : {latitude: 28.612912, longitude: 77.2295097},
-                zoom: 11,
+                center: $scope.userLocation,
+                zoom: 5,
                 markers: arrMarkers,
                 icon: "images/ambulance.ico"
             };
