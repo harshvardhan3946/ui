@@ -54,7 +54,10 @@
                                     <a href="#">{{ambulance.contactNumber}}</a>
                                 </div>
                                 <div class="submitBttn enquireCont">
-                                    <button id="" class="shadow">Enquire Now</button>
+                                    <form ng-submit="book(ambulance.id)">
+                                     <input type="hidden" name="ambulanceId" value="{{ambulance.id}}">
+                                     <button type="submit" class="shadow">Enquire Now</button>
+                                    </form>
                                 </div>
                             </div>
                             <div class="clear"></div>
@@ -84,7 +87,10 @@
                                 <a href="#">22-61618141</a>
                             </div>
                             <div class="submitBttn enquireCont">
-                                <button id="book" class="shadow">Enquire Now</button>
+                                <form ng-submit="book()">
+                                    <input type="hidden" value="">
+                                    <button type="submit" class="shadow">Enquire Now</button>
+                                </form>
                             </div>
                         </div>
                         <div class="clear"></div>

@@ -3,15 +3,13 @@
  */
 (function () {
     var app = angular.module('dawaaiiIndex', [
-        'ngRoute', 'vsGoogleAutocomplete', 'uiGmapgoogle-maps'
+        'ngRoute', 'vsGoogleAutocomplete', 'uiGmapgoogle-maps', 'angularModalService', 'ngAnimate'
     ]);
-
-
 
     /**
      * Configure the Routes
      */
-    app.config(['$routeProvider', function ($routeProvider) {
+    app.config(['$routeProvider', function ($routeProvider, ModalService) {
         $routeProvider
             .when("/", {templateUrl: "pages/home.html", controller: "PageCtrl"})
             .when("/ambulance-services", {templateUrl: "pages/ambulance/ambulance-services.html", controller: "AmbulanceCtrl"})
