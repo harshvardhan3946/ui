@@ -133,9 +133,9 @@ ul li{list-style-type:none;}
 .forAmb .textInput	{float:left;width:77%;margin-right:1%;padding:0%;margin-bottom:0; }
 .forAmb .textInputEquip	{float:left;width:38%;margin-right:1%;padding:0%;margin-bottom:0; }
 .forAmb .textInputEquip	input#address{border: none; margin-top: 4%;}
-.forAmb .submitBttn	{float:left;width:20%;}		
+.forAmb .submitBttn	{float:left;width:20%;}
 .forAmb .submitBttn button	{line-height:36px;}
-.forAmb .textInput.pinCode	{margin-bottom: 0px;padding: 9px 1.4%;}		
+.forAmb .textInput.pinCode	{margin-bottom: 0px;padding: 9px 1.4%;}
 .submitBttn button 		{width:100%;}
 .forAmb .textInput.locationCont	{border:none;}
 .forAmb .locationCont select	{padding:10px 2%;width:100%;}
@@ -158,7 +158,7 @@ ul li{list-style-type:none;}
 
 
 /**** css for mobile devices ****/
-@media all and (max-device-width: 639px){ 
+@media all and (max-device-width: 639px){
 /****** homepage ******/
 .topRightPart p a {padding-right: 5%;}
 .topRightPart {width: 43%;}
@@ -292,14 +292,14 @@ ul li{list-style-type:none;}
 
 
 /**** patches *****/
-@media all and (min-device-width: 810px) and (max-device-width: 940px){ 
+@media all and (min-device-width: 810px) and (max-device-width: 940px){
 .nav {margin-left: 3%;}
 .searchCont { padding: 0 4%;}
 .ambulancePage .middle_data {padding: 0 0 0 2%;}/** added by ab on 24aug15 ***/
 
 }
 
-@media all and (min-device-width: 640px) and (max-device-width: 810px){  
+@media all and (min-device-width: 640px) and (max-device-width: 810px){
 .nav ul li p a {font-size: 11px;}
 .nav {margin-left: 1%;width: 53%;}
 .searchCont {width:28px;height:28px;padding: 0 4%;}
@@ -349,8 +349,10 @@ ul li{list-style-type:none;}
 .division{
 	width:100%;
 	height:5px;
-	background-color: #E9EAED;	
+	background-color: #E9EAED;
 }
 .pac-container:after{
     content:none !important;
 }
+
+.angular-google-map-container { width:100%;height:400px;}

@@ -84,7 +84,7 @@
                                 <a href="#">22-61618141</a>
                             </div>
                             <div class="submitBttn enquireCont">
-                                <button id="" class="shadow">Enquire Now</button>
+                                <button id="book" class="shadow">Enquire Now</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -96,6 +96,9 @@
                 <!-- /ambulanceservicedata -->
             </div>
             <div class="ambRightCont">
+                <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true">
+                    <ui-gmap-marker ng-repeat="m in map.markers" coords="m" icon="m.icon" idkey="m.id" doCluster="true"></ui-gmap-marker>
+                </ui-gmap-google-map>
             </div>
             <div class="clear"></div>
         </div>
