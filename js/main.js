@@ -27,7 +27,16 @@
     }]);
 
     app.controller('PageCtrl', function ($scope) {
-
+        $scope.userLocation = {};
+        angular.element(document).ready(function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    $scope.userLocation.latitude = position.coords.latitude;
+                    $scope.userLocation.longitude = position.coords.longitude;
+                    console.log($scope.userLocation.latitude + "," + $scope.userLocation.longitude);
+                });
+            }
+        });
     });
 
 })();

@@ -6,6 +6,7 @@
             $scope.ambulances = {};
 
             $scope.init = function () {
+                alert($scope.userLocation.latitude);
                 var headers = {
                     "Authorization": "Basic ZGF3YWFpaTokMmEkMTEkZ3hwbmV6bVlmTkpSWW53L0VwSUs1T2UwOFRsd1pEbWNtVWVLa3JHY1NHR0hYdldheFV3UTI=",
                     "Content-Type": "application/json"
@@ -74,7 +75,7 @@
             ];
 
             $scope.map = {
-                center: {latitude: 28.612912, longitude: 77.2295097},
+                center: $scope.userLocation ? $scope.userLocation : {latitude: 28.612912, longitude: 77.2295097},
                 zoom: 11,
                 markers: arrMarkers,
                 icon: "images/ambulance.ico"
