@@ -55,6 +55,13 @@
 
             };
 
+            $scope.clearSearch = function () {
+                console.log("clearing filter");
+                if($("#address").val() == ""){
+                    $scope.address.components.city = '';
+                }
+            }
+
             $scope.book = function (ambulanceId) {
                 var bookData = {};
                 console.log("user asking to book with ambulance id " + ambulanceId);

@@ -23,7 +23,7 @@
                                    placeholder="Search Address">
                         </div>
                         <div class="submitBttn">
-                            <button type="submit" class="shadow">SEARCH</button>
+                            <button type="submit" ng-click="clearSearch()" class="shadow">SEARCH</button>
                         </div>
                         <div class="clear"></div>
                     </form>
@@ -31,7 +31,7 @@
                 <!-- /form -->
                 <!-- ambulanceservicedata -->
                 <div class="ambulanceservicedata">
-                    <div ng-repeat="ambulance in this.ambulances">
+                    <div ng-repeat="ambulance in this.ambulances = (this.ambulances|filter:address.components.city)">
                         <div class="detailsCont">
                             <div class="left1_data">
                                 <img src="images/ambulance.png" alt="">
@@ -63,37 +63,6 @@
                             <div class="clear"></div>
                         </div>
 
-                    </div>
-                    <div class="detailsCont">
-                        <div class="left1_data">
-                            <img src="images/ambulance.png" alt="">
-                        </div>
-                        <div class="middle_data">
-                            <div class="name_block">
-                                <h2 class="ambu_name">Dr. Mahesh</h2>
-
-                                <div class="ambu_area"><p> Delhi, NCR </p></div>
-                                <div class="ambu_add">
-                                    Ambulance Name
-                                    <div class="ambu_area"><p>Bullet Point-1 Bullet Point-2 Bullet Point-3</p></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right_data">
-                            <div class="userReviewCont">
-                                <a href="#">User Reviews </a>
-                            </div>
-                            <div class="contactCont">
-                                <a href="#">22-61618141</a>
-                            </div>
-                            <div class="submitBttn enquireCont">
-                                <form ng-submit="book()">
-                                    <input type="hidden" value="">
-                                    <button type="submit" class="shadow">Enquire Now</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
                     </div>
                     <div class="division"></div>
                     <div class="enquire_form" id="amb_enq_form">
