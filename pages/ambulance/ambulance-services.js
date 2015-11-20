@@ -3,7 +3,7 @@
         .module('dawaaiiIndex')
         .controller('AmbulanceCtrl', function ($scope, $http, ModalService) {
 
-            $scope.ambulances = {};
+            $scope.ambulances = [];
             $scope.userLocation = {latitude: 28.612912, longitude: 77.2295097};
             $scope.ambulanceId = '';
 
@@ -27,10 +27,17 @@
                     headers: headers
                 }).success(function (response) {
                     $scope.ambulances = response.data.Ambulances;
+                    $scope.map = {
+                        center: $scope.userLocation,
+                        zoom: 5,
+                        markers: $scope.ambulances,
+                        icon: "images/ambulance.ico"
+                    };
                 }).error(function (error) {
                     console.log(error);
                 });
             };
+
             $scope.init();
 
             $scope.options = {
@@ -57,7 +64,7 @@
 
             $scope.clearSearch = function () {
                 console.log("clearing filter");
-                if($("#address").val() == ""){
+                if ($("#address").val() == "") {
                     $scope.address.components.city = '';
                 }
             }
@@ -89,43 +96,6 @@
                         }
                     });
                 });
-            };
-
-            var arrMarkers = [
-                {
-                    id: "home",
-                    name: "home",
-                    latitude: 28.4650453, //valid coords
-                    longitude: 77.10071169999992, //valid coords
-                    options: {
-                        animation: google.maps.Animation.BOUNCE
-                    }
-                },
-                {
-                    id: "placeAId",
-                    name: "Place A",
-                    latitude: 28.5838004, //valid coords
-                    longitude: 77.35971940000002 //valid coords
-                },
-                {
-                    id: "placeBId",
-                    name: "Place B",
-                    latitude: 27.1766701, //valid coords
-                    longitude: 78.00807450000002 //valid coords
-                },
-                {
-                    id: "placeCId",
-                    name: "Place C",
-                    latitude: 28.6314512, //valid coords
-                    longitude: 77.21666720000007 //valid coords
-                }
-            ];
-
-            $scope.map = {
-                center: $scope.userLocation,
-                zoom: 5,
-                markers: arrMarkers,
-                icon: "images/ambulance.ico"
             };
         });
 

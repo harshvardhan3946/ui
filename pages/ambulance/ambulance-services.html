@@ -39,6 +39,7 @@
                             <div class="middle_data">
                                 <div class="name_block">
                                     <h2 class="ambu_name">{{ambulance.serviceProviderName}}</h2>
+
                                     <div class="ambu_area"><p> {{ambulance.area}}, {{ambulance.city}} </p></div>
                                     <div class="ambu_add">
                                         {{ambulance.address}}
@@ -55,8 +56,8 @@
                                 </div>
                                 <div class="submitBttn enquireCont">
                                     <form ng-submit="book(ambulance.id)">
-                                     <input type="hidden" name="ambulanceId" value="{{ambulance.id}}">
-                                     <button type="submit" class="shadow">Enquire Now</button>
+                                        <input type="hidden" name="ambulanceId" value="{{ambulance.id}}">
+                                        <button type="submit" class="shadow">Enquire Now</button>
                                     </form>
                                 </div>
                             </div>
@@ -71,8 +72,8 @@
                 <!-- /ambulanceservicedata -->
             </div>
             <div class="ambRightCont">
-                <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true">
-                    <ui-gmap-marker ng-repeat="m in map.markers" coords="m" icon="m.icon" idkey="m.id" doCluster="true"></ui-gmap-marker>
+                <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" refresh="true">
+                    <ui-gmap-markers models="map.markers" coords="'self'" icon="'map.icon'"></ui-gmap-markers>
                 </ui-gmap-google-map>
             </div>
             <div class="clear"></div>
