@@ -18,32 +18,35 @@
             };
 
             //common header for rest calls
+            var url = 'http://localhost:8080/api/rest/ambulances';
             var headers = {
                 "Authorization": "Basic ZGF3YWFpaTokMmEkMTEkZ3hwbmV6bVlmTkpSWW53L0VwSUs1T2UwOFRsd1pEbWNtVWVLa3JHY1NHR0hYdldheFV3UTI=",
                 "Content-Type": "application/json",
                 "X-Requested-With": "XMLHttpRequest"
             };
 
-            $scope.init = function () {
+            function getDataFromServer() {
+                $http.get(url, {headers: headers})
+                    .success(function (response) {
+                        $scope.ambulances = response.data.Ambulances;
+                        $scope.map.markers = $scope.ambulances;
+                        $scope.map.loaded = true;
+                    }).error(function (error) {
+                        console.log(error);
+                    });
+            };
 
+            $scope.init = function () {
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function (position) {
                         $scope.userLocation.latitude = position.coords.latitude;
                         $scope.userLocation.longitude = position.coords.longitude;
+                        url = url + '/sorted?lat=' + $scope.userLocation.latitude + "&lon=" + $scope.userLocation.longitude
                         console.log($scope.userLocation.latitude + "," + $scope.userLocation.longitude);
+                        getDataFromServer();
                     });
                 }
-                ;
-
-                $http.get('http://localhost:8080/api/rest/ambulances', {
-                    headers: headers
-                }).success(function (response) {
-                    $scope.ambulances = response.data.Ambulances;
-                    $scope.map.markers = $scope.ambulances;
-                    $scope.map.loaded = true;
-                }).error(function (error) {
-                    console.log(error);
-                });
+                getDataFromServer();
             };
 
             $scope.init();
