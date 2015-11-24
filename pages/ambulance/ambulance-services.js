@@ -63,7 +63,7 @@
                     templateUrl: "pages/ambulance/amb-bookingform.html",
                     controller: "ComplexController",
                     inputs: {
-                        title: "Provide details"
+                        title: "Enter details"
                     }
                 }).then(function (modal) {
                     modal.element.modal();
