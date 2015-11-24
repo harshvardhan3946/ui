@@ -23,7 +23,7 @@
                                    placeholder="Search Address">
                         </div>
                         <div class="submitBttn">
-                            <button type="submit" ng-click="clearSearch()" class="shadow">SEARCH</button>
+                            <button type="submit" class="shadow">SEARCH</button>
                         </div>
                         <div class="clear"></div>
                     </form>
@@ -31,7 +31,7 @@
                 <!-- /form -->
                 <!-- ambulanceservicedata -->
                 <div class="ambulanceservicedata">
-                    <div ng-repeat="ambulance in this.ambulances = (this.ambulances|filter:address.components.city)">
+                    <div ng-repeat="ambulance in this.ambulances | filter:address.name">
                         <div class="detailsCont">
                             <div class="left1_data">
                                 <img src="images/ambulance.png" alt="">
@@ -72,7 +72,7 @@
                 <!-- /ambulanceservicedata -->
             </div>
             <div class="ambRightCont">
-                <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" refresh="true">
+                <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" refresh="map.loaded">
                     <ui-gmap-markers models="map.markers" coords="'self'" icon="'map.icon'"></ui-gmap-markers>
                 </ui-gmap-google-map>
             </div>

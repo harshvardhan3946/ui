@@ -3,10 +3,21 @@
         .module('dawaaiiIndex')
         .controller('AmbulanceCtrl', function ($scope, $http, ModalService) {
 
+            //scope variables
+            $scope.address = {name: '', components: {city: '', state: '', postCode: '', location: {lat: '', long: ''}}};
+            $scope.options = {componentRestrictions: {country: 'IN'}};
             $scope.ambulances = [];
             $scope.userLocation = {latitude: 28.612912, longitude: 77.2295097};
             $scope.ambulanceId = '';
+            $scope.map = {
+                center: $scope.userLocation,
+                zoom: 5,
+                markers: [],
+                loaded: false,
+                icon: "images/ambulance.ico"
+            };
 
+            //common header for rest calls
             var headers = {
                 "Authorization": "Basic ZGF3YWFpaTokMmEkMTEkZ3hwbmV6bVlmTkpSWW53L0VwSUs1T2UwOFRsd1pEbWNtVWVLa3JHY1NHR0hYdldheFV3UTI=",
                 "Content-Type": "application/json",
@@ -14,6 +25,7 @@
             };
 
             $scope.init = function () {
+
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function (position) {
                         $scope.userLocation.latitude = position.coords.latitude;
@@ -27,12 +39,8 @@
                     headers: headers
                 }).success(function (response) {
                     $scope.ambulances = response.data.Ambulances;
-                    $scope.map = {
-                        center: $scope.userLocation,
-                        zoom: 5,
-                        markers: $scope.ambulances,
-                        icon: "images/ambulance.ico"
-                    };
+                    $scope.map.markers = $scope.ambulances;
+                    $scope.map.loaded = true;
                 }).error(function (error) {
                     console.log(error);
                 });
@@ -40,34 +48,9 @@
 
             $scope.init();
 
-            $scope.options = {
-                componentRestrictions: {country: 'IN'}
-            };
-
-            $scope.address = {
-                name: '',
-                components: {
-                    city: '',
-                    state: '',
-                    postCode: '',
-                    location: {
-                        lat: '',
-                        long: ''
-                    }
-                }
-            };
-
             $scope.fetchData = function () {
                 console.log("user asking to search " + this.address.components.city + ", " + this.address.components.state + ", " + this.address.components.postCode + ", " + this.address.components.location.lat + ", " + this.address.components.location.long);
-
             };
-
-            $scope.clearSearch = function () {
-                console.log("clearing filter");
-                if ($("#address").val() == "") {
-                    $scope.address.components.city = '';
-                }
-            }
 
             $scope.book = function (ambulanceId) {
                 var bookData = {};
