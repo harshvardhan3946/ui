@@ -3,7 +3,7 @@
  */
 (function () {
     var app = angular.module('dawaaiiIndex', [
-        'ngRoute', 'vsGoogleAutocomplete', 'uiGmapgoogle-maps', 'angularModalService', 'ngAnimate'
+        'ngRoute', 'vsGoogleAutocomplete', 'uiGmapgoogle-maps', 'ngAnimate'
     ]);
 
     /**

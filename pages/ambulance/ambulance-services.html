@@ -32,7 +32,7 @@
                 <!-- ambulanceservicedata -->
                 <div class="ambulanceservicedata">
                     <div ng-repeat="ambulance in this.ambulances | filter:address.name">
-                        <div class="detailsCont">
+                        <div class="detailsCont" id="{{ambulance.id}}">
                             <div class="left1_data">
                                 <img src="images/ambulance.png" alt="">
                             </div>

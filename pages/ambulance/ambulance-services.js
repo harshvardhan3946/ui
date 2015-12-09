@@ -1,7 +1,7 @@
 (function () {
     angular
         .module('dawaaiiIndex')
-        .controller('AmbulanceCtrl', function ($scope, $http, ModalService) {
+        .controller('AmbulanceCtrl', function ($scope, $http) {
 
             //scope variables
             $scope.address = {name: '', components: {city: '', state: '', postCode: '', location: {lat: '', long: ''}}};
@@ -59,59 +59,14 @@
                 var bookData = {};
                 console.log("user asking to book with ambulance id " + ambulanceId);
                 bookData.ambulanceId = ambulanceId;
-                ModalService.showModal({
-                    templateUrl: "pages/ambulance/amb-bookingform.html",
-                    controller: "ComplexController",
-                    inputs: {
-                        title: "Enter details"
-                    }
-                }).then(function (modal) {
-                    modal.element.modal();
-                    modal.close.then(function (result) {
-                        console.log(result.name + ", " + result.email + ", " + result.contact);
-                        if (result.email != null) {
-                            bookData.email = result.email;
-                            //now give a post request to book ambulance
-                            $http.post('http://localhost:8080/api/rest/ambulances/book', bookData, {
-                                headers: headers
-                            }).success(function (response) {
-                                console.log(response);
-                            }).error(function (error) {
-                                console.log(error);
-                            });
-                        }
-                    });
-                });
+                var p = document.getElementById(ambulanceId);
+                var newElement = document.createElement('p');
+                //newElement.setAttribute('id', elementId);
+                newElement.innerHTML = "<b>Hello</b>";
+                p.appendChild(newElement);
+                // Removes an element from the document
+                //var element = document.getElementById(elementId);
+                //element.parentNode.removeChild(element);
             };
         });
-
-    angular
-        .module('dawaaiiIndex')
-        .controller('ComplexController', ['$scope', '$element', 'title', 'close', function ($scope, $element, title, close) {
-            $scope.name = null;
-            $scope.email = null;
-            $scope.contact = null;
-            $scope.title = title;
-            //  This close function doesn't need to use jQuery or bootstrap, because
-            //  the button has the 'data-dismiss' attribute.
-            $scope.close = function () {
-                close({
-                    name: $scope.name,
-                    email: $scope.email,
-                    contact: $scope.contact
-                }, 500); // close, but give 500ms for bootstrap to animate
-            };
-            //  This cancel function must use the bootstrap, 'modal' function because
-            //  the doesn't have the 'data-dismiss' attribute.
-            $scope.cancel = function () {
-                //  Manually hide the modal.
-                $element.modal('hide');
-                //  Now call close, returning control to the caller.
-                close({
-                    name: $scope.name,
-                    email: $scope.email,
-                    contact: $scope.contact
-                }, 500); // close, but give 500ms for bootstrap to animate
-            };
-        }]);
 })();
