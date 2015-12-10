@@ -395,3 +395,47 @@ ul li{list-style-type:none;}
 #custom-modal.ng-leave.ng-leave-active {
     opacity: 0;
 }
+
+p button,
+input,
+select,
+textarea {
+    border: 1px solid #9e9e9e;
+    color: #353535;
+    font-family: inherit;
+    font-size: 14px;
+    margin:0 10px 7px 0;
+    padding: 13px 9px 10px;
+    box-shadow:0 1px 0 #f4f4f4;
+    -moz-box-shadow:0 1px 0 #f4f4f4;
+    -webkit-box-shadow:0 1px 0 #f4f4f4;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+p label{
+    clear: both; font-weight: bold; font-size: 33px; color: rgb(119, 212, 74);
+}
+
+p input[type="text"], input[type="email"], input[type="number"], select {
+    width: 27%;
+    height: 40px;
+    outline: none;
+    padding: 0 10px;
+    border: 1px solid rgb(119, 212, 74);
+}
+
+p button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    min-width:130px;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background: none repeat scroll 0% 0% rgb(119, 212, 74); color:#fff; border: 0px none;font-weight: bold;;
+}
+
+fieldset {
+    border: 1px solid rgb(119, 212, 74);
+    border-radius: 5px;
+}

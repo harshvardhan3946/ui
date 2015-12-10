@@ -62,7 +62,7 @@
                 var p = document.getElementById(ambulanceId);
                 var newElement = document.createElement('p');
                 //newElement.setAttribute('id', elementId);
-                newElement.innerHTML = "<b>Hello</b>";
+                newElement.innerHTML = '<fieldset><legend><label>Enter Details</label></legend><br/><input type="text" id="name" name="name" placeholder="Name" value="" required=""> <input type="text" id="pemail" name="email" placeholder="Email" value="" required=""> <input type="text" maxlength="12" id="pphone" name="phone" placeholder="Phone Number" required=""><input type="button" name="submit" value="NEXT"></fieldset>';
                 p.appendChild(newElement);
                 // Removes an element from the document
                 //var element = document.getElementById(elementId);
