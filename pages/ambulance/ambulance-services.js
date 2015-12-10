@@ -1,7 +1,7 @@
 (function () {
     angular
         .module('dawaaiiIndex')
-        .controller('AmbulanceCtrl', function ($scope, $http) {
+        .controller('AmbulanceCtrl', function ($scope, $http, $compile) {
 
             //scope variables
             $scope.address = {name: '', components: {city: '', state: '', postCode: '', location: {lat: '', long: ''}}};
@@ -9,6 +9,7 @@
             $scope.ambulances = [];
             $scope.userLocation = {latitude: 28.612912, longitude: 77.2295097};
             $scope.ambulanceId = '';
+            var bookData = {};
             $scope.map = {
                 center: $scope.userLocation,
                 zoom: 5,
@@ -55,18 +56,33 @@
                 console.log("user asking to search " + this.address.components.city + ", " + this.address.components.state + ", " + this.address.components.postCode + ", " + this.address.components.location.lat + ", " + this.address.components.location.long);
             };
 
-            $scope.book = function (ambulanceId) {
-                var bookData = {};
-                console.log("user asking to book with ambulance id " + ambulanceId);
+            $scope.enquire = function (ambulanceId) {
+                console.log("user asking to enquire ambulance " + ambulanceId);
                 bookData.ambulanceId = ambulanceId;
                 var p = document.getElementById(ambulanceId);
-                var newElement = document.createElement('p');
-                //newElement.setAttribute('id', elementId);
-                newElement.innerHTML = '<fieldset><legend><label>Enter Details</label></legend><br/><input type="text" id="name" name="name" placeholder="Name" value="" required=""> <input type="text" id="pemail" name="email" placeholder="Email" value="" required=""> <input type="text" maxlength="12" id="pphone" name="phone" placeholder="Phone Number" required=""><input type="button" name="submit" value="NEXT"></fieldset>';
-                p.appendChild(newElement);
-                // Removes an element from the document
-                //var element = document.getElementById(elementId);
-                //element.parentNode.removeChild(element);
+                var formElem = document.getElementById(ambulanceId + "form");
+                if (formElem) {
+                    p.removeChild(formElem);
+                } else {
+                    var newElement = document.createElement('p');
+                    newElement.setAttribute('id', ambulanceId + "form");
+                    newElement.innerHTML = '<fieldset><legend><label>Enter Details</label></legend><br/><form ng-submit=book("' + ambulanceId + '")><input type="text" id="name" placeholder="Name" ng-model="name"> <input type="text" id="email" placeholder="Email" ng-model="email"> <input type="text" maxlength="12" id="contact" placeholder="Phone Number" ng-model="contact"><button type="submit" class="shadow">PROCEED</button></form></fieldset>';
+                    p.appendChild(newElement);
+                    $compile(newElement)($scope);
+                }
+            };
+
+            $scope.book = function (ambulanceId) {
+                console.log("user asking to enquire ambulance " + ambulanceId);
+                var p = document.getElementById(ambulanceId);
+                var formElem = document.getElementById(ambulanceId + "form");
+                if (formElem) {
+                    p.removeChild(formElem);
+                }
+                //todo
+                alert($scope.name);
+                alert($scope.email);
+                alert($scope.contact);
             };
         });
 })();

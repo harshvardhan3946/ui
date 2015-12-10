@@ -414,7 +414,7 @@ textarea {
     -webkit-border-radius:5px;
 }
 p label{
-    clear: both; font-weight: bold; font-size: 33px; color: rgb(119, 212, 74);
+    clear: both; font-weight: bold; font-size: 20px; color: rgb(119, 212, 74);
 }
 
 p input[type="text"], input[type="email"], input[type="number"], select {
