@@ -76,13 +76,21 @@
                 console.log("user asking to enquire ambulance " + ambulanceId);
                 var p = document.getElementById(ambulanceId);
                 var formElem = document.getElementById(ambulanceId + "form");
+                bookData.name = $scope.name;
+                bookData.email = $scope.email;
+                bookData.number = $scope.contact;
+                //now give a post request to book ambulance
+                $http.post('http://localhost:8080/api/rest/ambulances/book', bookData, {
+                    headers: headers
+                }).success(function (response) {
+                    console.log(response);
+                }).error(function (error) {
+                    console.log(error);
+                });
+                //now remove this form
                 if (formElem) {
                     p.removeChild(formElem);
                 }
-                //todo
-                alert($scope.name);
-                alert($scope.email);
-                alert($scope.contact);
             };
         });
 })();
