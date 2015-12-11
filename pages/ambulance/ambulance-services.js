@@ -62,12 +62,14 @@
                 var p = document.getElementById(ambulanceId);
                 var formElem = document.getElementById(ambulanceId + "form");
                 if (formElem) {
-                    p.removeChild(formElem);
+                    $(formElem).fadeOut(500, function () {
+                        $(this).remove();
+                    });
                 } else {
                     var newElement = document.createElement('p');
                     newElement.setAttribute('id', ambulanceId + "form");
                     newElement.innerHTML = '<fieldset><legend><label>Enter Details</label></legend><br/><form ng-submit=book("' + ambulanceId + '")><input type="text" id="name" placeholder="Name" ng-model="name"> <input type="text" id="email" placeholder="Email" ng-model="email"> <input type="text" maxlength="12" id="contact" placeholder="Phone Number" ng-model="contact"><button type="submit" class="shadow">PROCEED</button></form></fieldset>';
-                    p.appendChild(newElement);
+                    $(newElement).hide().appendTo(p).fadeIn(500);
                     $compile(newElement)($scope);
                 }
             };
@@ -89,7 +91,9 @@
                 });
                 //now remove this form
                 if (formElem) {
-                    p.removeChild(formElem);
+                    $(formElem).fadeOut(500, function () {
+                        $(this).remove();
+                    });
                 }
             };
         });
