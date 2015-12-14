@@ -1,7 +1,7 @@
 (function () {
     angular
         .module('dawaaiiIndex')
-        .controller('AmbulanceCtrl', function ($scope, $http, $compile) {
+        .controller('AmbulanceCtrl', function ($scope, $http, $compile, $mdToast) {
 
             //scope variables
             $scope.address = {name: '', components: {city: '', state: '', postCode: '', location: {lat: '', long: ''}}};
@@ -86,8 +86,20 @@
                     headers: headers
                 }).success(function (response) {
                     console.log(response);
+                    $mdToast.show(
+                        $mdToast.simple()
+                            .textContent('Enquiry sent for ambulance !')
+                            .position('right')
+                            .hideDelay(5000)
+                    );
                 }).error(function (error) {
                     console.log(error);
+                    $mdToast.show(
+                        $mdToast.simple()
+                            .textContent('Error sending enquiry for ambulance !')
+                            .position('right')
+                            .hideDelay(5000)
+                    );
                 });
                 //now remove this form
                 if (formElem) {
