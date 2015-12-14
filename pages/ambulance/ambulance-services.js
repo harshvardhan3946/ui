@@ -77,7 +77,6 @@
             $scope.book = function (ambulanceId) {
                 console.log("user asking to enquire ambulance " + ambulanceId);
                 var p = document.getElementById(ambulanceId);
-                var formElem = document.getElementById(ambulanceId + "form");
                 bookData.name = $scope.name;
                 bookData.email = $scope.email;
                 bookData.number = $scope.contact;
@@ -102,8 +101,8 @@
                     );
                 });
                 //now remove this form
-                if (formElem) {
-                    $(formElem).fadeOut(500, function () {
+                if (p) {
+                    $(p).fadeOut(500, function () {
                         $(this).remove();
                     });
                 }

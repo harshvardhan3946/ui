@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8124f4e4-3994-4509-8e4e-3d4f45e807ed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/angular-material.min.css" afterPath="$PROJECT_DIR$/css/angular-material.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ambulance/ambulance-services.html" afterPath="$PROJECT_DIR$/pages/ambulance/ambulance-services.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ambulance/ambulance-services.js" afterPath="$PROJECT_DIR$/pages/ambulance/ambulance-services.js" />
     </list>
     <ignored path="dawaaii_core_ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,21 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ambulance-services.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ambulance-services.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/ambulance/ambulance-services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.6784074">
+              <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular-material.min.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/angular-material.min.css">
+      <file leaf-file-name="ambulance-services.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ambulance/ambulance-services.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38284838">
-              <caret line="5" column="268897" selection-start-line="5" selection-start-column="268897" selection-end-line="5" selection-end-column="268897" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="33" column="87" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -95,8 +95,9 @@
         <option value="$PROJECT_DIR$/js/angular-messages.min.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/pages/ambulance/ambulance-services.js" />
         <option value="$PROJECT_DIR$/css/angular-material.min.css" />
+        <option value="$PROJECT_DIR$/pages/ambulance/ambulance-services.html" />
+        <option value="$PROJECT_DIR$/pages/ambulance/ambulance-services.js" />
       </list>
     </option>
   </component>
@@ -183,34 +184,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ambulance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dawaaii_core_ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dawaaii_core_ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dawaaii_core_ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dawaaii_core_ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,12 +463,12 @@
       <created>1450056507478</created>
       <option name="number" value="Default" />
       <updated>1450056507478</updated>
-      <workItem from="1450056511698" duration="2337000" />
+      <workItem from="1450056511698" duration="2710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2337000" />
+    <option name="totallyTimeSpent" value="2710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1278" height="773" extended-state="6" />
@@ -590,18 +563,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ambulance/ambulance-services.js">
+    <entry file="file://$PROJECT_DIR$/css/angular-material.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.03828484">
+          <caret line="5" column="267384" selection-start-line="5" selection-start-column="267384" selection-end-line="5" selection-end-column="267384" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/angular-material.min.css">
+    <entry file="file://$PROJECT_DIR$/pages/ambulance/ambulance-services.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38284838">
-          <caret line="5" column="268897" selection-start-line="5" selection-start-column="268897" selection-end-line="5" selection-end-column="268897" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="33" column="87" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ambulance/ambulance-services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6784074">
+          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
           <folding />
         </state>
       </provider>
