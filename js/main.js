@@ -32,7 +32,12 @@
             navigator.geolocation.getCurrentPosition(function (position) {
                 $http.get("http://maps.googleapis.com/maps/api/geocode/json?latlng=" + position.coords.latitude + "," + position.coords.longitude)
                     .success(function (response) {
-                        $scope.userAddress = response.results[1].formatted_address;
+                        if (response.results.length >= 2) {
+                            $scope.userAddress = response.results[1].formatted_address;
+                        }
+                        else if (response.results.length > 0) {
+                            $scope.userAddress = response.results[0].formatted_address;
+                        }
                     }).error(function (error) {
                         console.log(error);
                     });
