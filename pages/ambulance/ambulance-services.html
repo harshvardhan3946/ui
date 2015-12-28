@@ -9,7 +9,7 @@
                     <form name="form" ng-submit="form.address.$dirty && fetchData()" role="form">
                         <div class="textInput locationCont">
                             <!-- parsing address components -->
-                            <input vs-google-autocomplete="options"
+                            <input vs-google-autocomplete="this.options"
                                    ng-model="address.name"
                                    vs-city="address.components.city"
                                    vs-state="address.components.state"
@@ -25,13 +25,16 @@
                         <div class="submitBttn">
                             <button type="submit" class="shadow">SEARCH</button>
                         </div>
+                        <div style="color:#82878E;font-style: italic;">
+                            <input type="checkbox" ng-model="this.withinResult" ng-change="turnOffAutoComplete()" />within result
+                        </div>
                         <div class="clear"></div>
                     </form>
                 </div>
                 <!-- /form -->
                 <!-- ambulanceservicedata -->
                 <div class="ambulanceservicedata">
-                    <div ng-repeat="ambulance in this.ambulances | filter:address.name">
+                    <div ng-repeat="ambulance in this.ambulances | filter:(this.withinResult || '') && address.name">
                         <div class="detailsCont" id="{{ambulance.id}}" ng-hide="ambulance.hide">
                             <div class="left1_data">
                                 <img src="images/ambulance.png" alt="">

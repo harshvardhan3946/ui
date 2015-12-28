@@ -9,6 +9,7 @@
             $scope.ambulances = [];
             $scope.userLocation = {latitude: 28.612912, longitude: 77.2295097};
             $scope.ambulanceId = '';
+            $scope.withinResult = false;
             var bookData = {};
             $scope.map = {
                 center: $scope.userLocation,
@@ -105,6 +106,14 @@
                     $(p).fadeOut(500, function () {
                         $(this).remove();
                     });
+                }
+            };
+
+            $scope.turnOffAutoComplete = function () {
+                if ($scope.withinResult) {
+                    $scope.options = {componentRestrictions: {country: 'ZZ'}};
+                } else {
+                    $scope.options = {componentRestrictions: {country: 'IN'}};
                 }
             };
         });
