@@ -130,7 +130,7 @@ ul li{list-style-type:none;}
 .ambPageContent	{max-width:1000px;margin:0 auto;padding:20px 0;	}
 .ambLeftCont	{width:70%;float:left;}
 .ambRightCont	{width:28%;float:right;}
-.forAmb .textInput	{float:left;width:77%;margin-right:1%;padding:0%;margin-bottom:0; }
+.forAmb .textInput	{float:left;width:40%;margin-right:1%;padding:0%;margin-bottom:0; }
 .forAmb .textInputEquip	{float:left;width:38%;margin-right:1%;padding:0%;margin-bottom:0; }
 .forAmb .textInputEquip	input#address{border: none; margin-top: 4%;}
 .forAmb .submitBttn	{float:left;width:20%;}
@@ -151,6 +151,7 @@ ul li{list-style-type:none;}
 .ambulancePage .right_data .userReviewCont a	{background:url(../images/ic_review_small.png) 0 0 no-repeat;line-height: 15px; padding: 0 0 0 15%;}
 .ambulancePage .contactCont	{padding:10px 0 10px 0px;}
 .ambulancePage .right_data .contactCont a	{background:url(../images/phone_icon.png) 0 0 no-repeat;background-size:10% auto;padding: 0 0 0 15%;}
+.ambulancePage .right_data .price a	{background:url(../images/rupee.png) 0 0 no-repeat;background-size:10% auto;padding: 0 0 0 15%;}
 .ambulancePage .detailsCont	{padding:2%;}
 .submitBttn.enquireCont button {background:rgb(119, 212, 74);}
 /****** css for ambulancePage ends *****/
@@ -422,7 +423,6 @@ p input[type="text"], input[type="email"], input[type="number"], select {
     height: 40px;
     outline: none;
     padding: 0 10px;
-    border: 1px solid rgb(119, 212, 74);
 }
 
 p button,

@@ -22,11 +22,19 @@
                                    class="form-control"
                                    placeholder="Search Address">
                         </div>
+                        <div class="textInputEquip locationCont serviceCont">
+                            <select ng-model="ambtype">
+                                <option value="">Ambulance Type</option>
+                                <option value="Normal Ambulance.">Normal Ambulance.</option>
+                                <option value="Ambulance with Oxygen.">Ambulance with Oxygen.</option>
+                            </select>
+                        </div>
                         <div class="submitBttn">
                             <button type="submit" class="shadow">SEARCH</button>
                         </div>
                         <div style="color:#82878E;font-style: italic;">
-                            <input type="checkbox" ng-model="this.withinResult" ng-change="turnOffAutoComplete()" />within result
+                            <input type="checkbox" ng-model="this.withinResult" ng-change="turnOffAutoComplete()"/>within
+                            result
                         </div>
                         <div class="clear"></div>
                     </form>
@@ -34,7 +42,7 @@
                 <!-- /form -->
                 <!-- ambulanceservicedata -->
                 <div class="ambulanceservicedata">
-                    <div ng-repeat="ambulance in this.ambulances | filter:(this.withinResult || '') && address.name">
+                    <div ng-repeat="ambulance in this.ambulances | filter:(this.withinResult || '') && address.name | filter : ambtype">
                         <div class="detailsCont" id="{{ambulance.id}}" ng-hide="ambulance.hide">
                             <div class="left1_data">
                                 <img src="images/ambulance.png" alt="">
@@ -44,6 +52,8 @@
                                     <h2 class="ambu_name">{{ambulance.serviceProviderName}}</h2>
 
                                     <div class="ambu_area"><p> {{ambulance.area}}, {{ambulance.city}} </p></div>
+                                    <i>Ambulance Type : {{ambulance.ambulanceType}}</i>
+
                                     <div class="ambu_add">
                                         {{ambulance.address}}
                                         <div class="ambu_area"><p>{{ambulance.description}}</p></div>
@@ -57,6 +67,11 @@
                                 <div class="contactCont">
                                     <a href="#">{{ambulance.contactNumber}}</a>
                                 </div>
+                                <div class="price">
+                                    <a href="#">INR {{ambulance.price}}</a>
+                                </div>
+                                <br/>
+
                                 <div class="submitBttn enquireCont">
                                     <form ng-submit="enquire(ambulance.id)">
                                         <input type="hidden" name="ambulanceId" value="{{ambulance.id}}">

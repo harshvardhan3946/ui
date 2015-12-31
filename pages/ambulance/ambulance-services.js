@@ -11,6 +11,7 @@
             $scope.ambulanceId = '';
             $scope.withinResult = false;
             $scope.pac = '';
+            $scope.ambtype = '';
             var bookData = {};
             $scope.map = {
                 center: $scope.userLocation,
