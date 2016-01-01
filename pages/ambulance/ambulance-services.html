@@ -90,8 +90,8 @@
                 <!-- /ambulanceservicedata -->
             </div>
             <div class="ambRightCont">
-                <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" refresh="map.loaded">
-                    <ui-gmap-markers models="map.markers" coords="'self'" icon="'map.icon'"></ui-gmap-markers>
+                <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" refresh="map.loaded" ng-cloak>
+                    <ui-gmap-markers models="map.markers" coords="'self'"></ui-gmap-markers>
                 </ui-gmap-google-map>
             </div>
             <div class="clear"></div>

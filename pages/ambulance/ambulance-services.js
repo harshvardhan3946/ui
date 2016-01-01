@@ -15,10 +15,9 @@
             var bookData = {};
             $scope.map = {
                 center: $scope.userLocation,
-                zoom: 5,
+                zoom: 15,
                 markers: [],
-                loaded: false,
-                icon: "images/ambulance.ico"
+                loaded: false
             };
 
             //common header for rest calls
