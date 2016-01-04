@@ -1,7 +1,7 @@
 (function () {
     angular
         .module('dawaaiiIndex')
-        .controller('AmbulanceCtrl', function ($scope, $http, $compile, $mdToast) {
+        .controller('AmbulanceCtrl', function ($scope, $http, $compile, $mdToast, $interval) {
 
             //scope variables
             $scope.address = {name: '', components: {city: '', state: '', postCode: '', location: {lat: '', long: ''}}};
@@ -26,6 +26,30 @@
                 "Authorization": "Basic ZGF3YWFpaTokMmEkMTEkZ3hwbmV6bVlmTkpSWW53L0VwSUs1T2UwOFRsd1pEbWNtVWVLa3JHY1NHR0hYdldheFV3UTI=",
                 "Content-Type": "application/json",
                 "X-Requested-With": "XMLHttpRequest"
+            };
+
+            //check for updated ambulance from server
+            $interval(function () {
+                $scope.update();
+            }, 10000);
+
+            $scope.update = function () {
+                var ts = (new Date()).getTime();
+                var totalAmbulances = $scope.ambulances.length;
+                $http.get('http://localhost:8080/api/rest/ambulances/updates/' + (ts - 10000), {headers: headers})
+                    .success(function (response) {
+                        var ambulances = response.data.Ambulances;
+                        for (var i = 0; i < ambulances.length; i++) {
+                            for (var j = 0; j < totalAmbulances; j++) {
+                                if ($scope.ambulances[j].id === ambulances[i].id) {
+                                    $scope.ambulances[j].latitude = ambulances[i].latitude;
+                                    $scope.ambulances[j].longitude = ambulances[i].longitude;
+                                }
+                            }
+                        }
+                    }).error(function (error) {
+                        console.log(error);
+                    });
             };
 
             function getDataFromServer() {
