@@ -24,6 +24,7 @@
             .when("/hospital-finder", {templateUrl: "pages/hospital-finder.html", controller: "PageCtrl"})
             .when("/pathlab", {templateUrl: "pages/pathlab.html", controller: "PageCtrl"})
             .when("/inhouse", {templateUrl: "pages/inhouse.html", controller: "PageCtrl"})
+            .when("/medicine", {templateUrl: "pages/medicine/medicine.html", controller: "PageCtrl"})
             .otherwise("/404", {templateUrl: "pages/404.html", controller: "PageCtrl"});
     }]);
 

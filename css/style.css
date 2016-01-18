@@ -49,7 +49,7 @@ ul li{list-style-type:none;}
 
 /****** homepage *******/
 .bannerCont	{background:url(../images/banner_main.jpg) 0 0 repeat-x;}
-.bannerContent	{max-width:1000px;margin:0 auto;}
+.bannerContent	{max-width:100%;margin:0 auto;}
 .bannerContent h2	{font-size:20px;line-height:24px;color:#000000;font-weight:bold;text-align:center;padding-top:35px;padding-bottom:35px;}
 .serItems	{float:left;width:15.5%;margin:0 .5%;min-height:150px;padding-bottom: 20px;}
 .serItem7 .serIconCont a	{padding-top:10px;}
@@ -160,131 +160,131 @@ ul li{list-style-type:none;}
 
 /**** css for mobile devices ****/
 @media all and (max-device-width: 639px){
-/****** homepage ******/
-.topRightPart p a {padding-right: 5%;}
-.topRightPart {width: 43%;}
-.topRightPart div {padding: 0 3% 0 0;}
-.nav {display:none;}
-.menuBttn	{display:block;float:right;width:15%;padding-top:22px;}
-.menuBttn p a	{display:block;font-size:12px;line-height:28px;color:#fff;font-weight:bold;background:#000;border-radius:8px;width:100%;text-align:center;}
-.utilityCont {width: 14%;padding-top: 23px;}
-.searchCont a,.phoneCont a  {width: 75%;}
-.searchCont {padding: 0 2%;}
-.header {padding-bottom: 8px;}
-.bannerCont {background: url("../images/banner_main_mob.jpg") no-repeat scroll 0 0;}
-.bannerContent h2 {font-size: 13px;line-height: 16px;padding-bottom: 20px;padding-top: 20px;}
-.serIconCont a img {width: auto;}
-.serItems {margin: 0 5.6%;width: 22%;}
-.serIconCont {min-height: 102px;}
-.serItems {min-height: 140px;padding:0 5.6% 10px;margin:0;}
-.serIconText p a {font-size: 12px;line-height: 14px;}
-.serIconText {width: 86%;}
-.blogCont .serItems {float:none;text-align: center;width: auto;padding-bottom: 30px;}
-.whyusContent h2 {font-size: 24px;padding: 20px 0;}
-.whyusContent p {font-size: 14px; line-height: 20px;padding: 10px 4%;}
-.custViewContent h2 {font-size: 20px;line-height: 24px;}
-.custImg { width: 33%;}
-.footRow1 {padding-left: 8%;width: 40%;padding-right: 6%;display:none;}
-.onlyMob	{display:block;}
-.appsDwnld a	{line-height:1px;font-size:0px;display:block;}
-.appsDwnld 	{display:block;width: 42.5%;float:left;padding-right: 7%;}
-.appBttns	{width:95%;padding-left:5%;padding-bottom:20px;}
-.footRow2,.footRow3,.footRow4	{display:none;}
-.rightColFooter	{width:46%;float:left;}
-.shareIconsCont		{width: 46%;padding:0;}
-.clickBoxes  	{border:1px solid #000;border-bottom:none;}
-.clickBoxes a	{display:block;width:100%;text-align:center;font-size: 16px;line-height: 46px;color:#000;font-weight:bold;background: url("../images/plus_sign.jpg") no-repeat scroll 7% 12px;}
-.clickBoxes.thirdBox	{border-bottom:1px solid #000;}
-.shareIcons {padding-bottom: 10px;padding-right: 2%;padding-top: 10px;padding-left:0;}
-.topLeftPart .locationInfo p  span{display:inline;}
-.topRightPart div.topBarText {width:25%}
-.clickBoxes.active a 	{background:url("../images/minus_sign.jpg") no-repeat scroll 7% 12px;}
-.leftColFooter {padding-left: 8%;padding-right: 6%;width: 40%;height:243px;}
-/*  Harshika 15/07/15 */
-.askdocContent{ width:100%;margin:0;}
-.askdocContent h6 { font-size:18px; line-height:20px;}
-/*  /Harshika 15/07/15 */
-/****** homepage ends ******/
+    /****** homepage ******/
+    .topRightPart p a {padding-right: 5%;}
+    .topRightPart {width: 43%;}
+    .topRightPart div {padding: 0 3% 0 0;}
+    .nav {display:none;}
+    .menuBttn	{display:block;float:right;width:15%;padding-top:22px;}
+    .menuBttn p a	{display:block;font-size:12px;line-height:28px;color:#fff;font-weight:bold;background:#000;border-radius:8px;width:100%;text-align:center;}
+    .utilityCont {width: 14%;padding-top: 23px;}
+    .searchCont a,.phoneCont a  {width: 75%;}
+    .searchCont {padding: 0 2%;}
+    .header {padding-bottom: 8px;}
+    .bannerCont {background: url("../images/banner_main_mob.jpg") no-repeat scroll 0 0;}
+    .bannerContent h2 {font-size: 13px;line-height: 16px;padding-bottom: 20px;padding-top: 20px;}
+    .serIconCont a img {width: auto;}
+    .serItems {margin: 0 5.6%;width: 22%;}
+    .serIconCont {min-height: 102px;}
+    .serItems {min-height: 140px;padding:0 5.6% 10px;margin:0;}
+    .serIconText p a {font-size: 12px;line-height: 14px;}
+    .serIconText {width: 86%;}
+    .blogCont .serItems {float:none;text-align: center;width: auto;padding-bottom: 30px;}
+    .whyusContent h2 {font-size: 24px;padding: 20px 0;}
+    .whyusContent p {font-size: 14px; line-height: 20px;padding: 10px 4%;}
+    .custViewContent h2 {font-size: 20px;line-height: 24px;}
+    .custImg { width: 33%;}
+    .footRow1 {padding-left: 8%;width: 40%;padding-right: 6%;display:none;}
+    .onlyMob	{display:block;}
+    .appsDwnld a	{line-height:1px;font-size:0px;display:block;}
+    .appsDwnld 	{display:block;width: 42.5%;float:left;padding-right: 7%;}
+    .appBttns	{width:95%;padding-left:5%;padding-bottom:20px;}
+    .footRow2,.footRow3,.footRow4	{display:none;}
+    .rightColFooter	{width:46%;float:left;}
+    .shareIconsCont		{width: 46%;padding:0;}
+    .clickBoxes  	{border:1px solid #000;border-bottom:none;}
+    .clickBoxes a	{display:block;width:100%;text-align:center;font-size: 16px;line-height: 46px;color:#000;font-weight:bold;background: url("../images/plus_sign.jpg") no-repeat scroll 7% 12px;}
+    .clickBoxes.thirdBox	{border-bottom:1px solid #000;}
+    .shareIcons {padding-bottom: 10px;padding-right: 2%;padding-top: 10px;padding-left:0;}
+    .topLeftPart .locationInfo p  span{display:inline;}
+    .topRightPart div.topBarText {width:25%}
+    .clickBoxes.active a 	{background:url("../images/minus_sign.jpg") no-repeat scroll 7% 12px;}
+    .leftColFooter {padding-left: 8%;padding-right: 6%;width: 40%;height:243px;}
+    /*  Harshika 15/07/15 */
+    .askdocContent{ width:100%;margin:0;}
+    .askdocContent h6 { font-size:18px; line-height:20px;}
+    /*  /Harshika 15/07/15 */
+    /****** homepage ends ******/
 
-/**** css for ambulancePage (added by ab on 24aug15) ****/
-.ambRightCont {float:none;width:auto;}
-.ambLeftCont {float:none;width:auto;}
-.ambulancePage .middle_data {width: 45%;}
+    /**** css for ambulancePage (added by ab on 24aug15) ****/
+    .ambRightCont {float:none;width:auto;}
+    .ambLeftCont {float:none;width:auto;}
+    .ambulancePage .middle_data {width: 45%;}
 
-/****** css for ambulancePage ends *****/
+    /****** css for ambulancePage ends *****/
 
 }
 
 
 
 @media all and (min-device-width: 450px) and (max-device-width: 530px){
-.utilityCont {width:17%;}
-.ambulancePage .right_data { margin-right: 0; width: 22%;}/** added by ab on 24aug15 ***/
-.ambulancePage .middle_data {width: 41%;}/** added by ab on 24aug15 ***/
-.submitBttn.enquireCont button {font-size:12px;}/** added by ab on 24aug15 ***/
+    .utilityCont {width:17%;}
+    .ambulancePage .right_data { margin-right: 0; width: 22%;}/** added by ab on 24aug15 ***/
+    .ambulancePage .middle_data {width: 41%;}/** added by ab on 24aug15 ***/
+    .submitBttn.enquireCont input {font-size:12px;}/** added by ab on 24aug15 ***/
 
 }
 
 
 
 @media all and (max-device-width: 450px){
-.topLeftPart .locationInfo p  span{display:none;}
-.topRightPart {width: 50%;}
-.topRightPart p a {padding-right: 8%;font-size:11px;}
-.topRightPart div {padding: 0 1% 0 0;}
-.logoCont a {width: 100%;}
-.logoCont {width:50%}
-.utilityCont {width: 25%;}
-.menuBttn {padding-top: 25px;}
-.menuBttn p a {font-size: 11px;line-height: 24px;}
-.serIconCont a img {width: 100%;}
-.serIconCont { min-height: 80px;}
-.serIconText p a {font-size: 11px;}
-.blogCont .serIconText p a {font-size: 14px;line-height:16px;}
-.blogCont h2 {padding: 30px 0 20px;}
-.whyusContent h2 {font-size: 18px;padding: 10px 0;}
-.whyusContent p {font-size: 12px;line-height: 16px;}
-.custViewContent h2 {font-size: 18px;}
-.footRow h2 {font-size: 16px;}
-.footRow1 {padding-left: 3%;padding-right: 3%;width: 50%;}
-.footRow ul li p a {font-size: 12px;}
-.rightColFooter {width: 44%;}
-.clickBoxes a {font-size: 11px;line-height: 39px;background-size: 10% auto;}
-.clickBoxes.active a {background-size: 10% auto;} /*added on 23aug2015 by ab */
-.footRow4 p,.touchLink p	{font-size:12px;color:#000;line-height: 16px;padding: 0 0 15px 20%;}/*added on 23aug2015 by ab */
-.submitBttn button {width:70%;font-size:11px;}/*added on 23aug2015 by ab */
-.newsletter p {padding: 0 0 10px 22%;}/*added on 23aug2015 by ab */
-.copyrightTextCont p {font-size: 11px;}
-.serItem10 a img,.serItem11 a img,.serItem12 a img {width: auto;}
+    .topLeftPart .locationInfo p  span{display:none;}
+    .topRightPart {width: 50%;}
+    .topRightPart p a {padding-right: 8%;font-size:11px;}
+    .topRightPart div {padding: 0 1% 0 0;}
+    .logoCont a {width: 100%;}
+    .logoCont {width:50%}
+    .utilityCont {width: 25%;}
+    .menuBttn {padding-top: 25px;}
+    .menuBttn p a {font-size: 11px;line-height: 24px;}
+    .serIconCont a img {width: 100%;}
+    .serIconCont { min-height: 80px;}
+    .serIconText p a {font-size: 11px;}
+    .blogCont .serIconText p a {font-size: 14px;line-height:16px;}
+    .blogCont h2 {padding: 30px 0 20px;}
+    .whyusContent h2 {font-size: 18px;padding: 10px 0;}
+    .whyusContent p {font-size: 12px;line-height: 16px;}
+    .custViewContent h2 {font-size: 18px;}
+    .footRow h2 {font-size: 16px;}
+    .footRow1 {padding-left: 3%;padding-right: 3%;width: 50%;}
+    .footRow ul li p a {font-size: 12px;}
+    .rightColFooter {width: 44%;}
+    .clickBoxes a {font-size: 11px;line-height: 39px;background-size: 10% auto;}
+    .clickBoxes.active a {background-size: 10% auto;} /*added on 23aug2015 by ab */
+    .footRow4 p,.touchLink p	{font-size:12px;color:#000;line-height: 16px;padding: 0 0 15px 20%;}/*added on 23aug2015 by ab */
+    .submitBttn input {width:70%;font-size:11px;}/*added on 23aug2015 by ab */
+    .newsletter p {padding: 0 0 10px 22%;}/*added on 23aug2015 by ab */
+    .copyrightTextCont p {font-size: 11px;}
+    .serItem10 a img,.serItem11 a img,.serItem12 a img {width: auto;}
 
-.topRightPart div.topBarText {width:29%}
-.shareIconsCont {width:44%;}
+    .topRightPart div.topBarText {width:29%}
+    .shareIconsCont {width:44%;}
 
-/*  Harshika 15/07/15 */
-.askdocContent{ width:100%;}
-.selection,select option{font-size:12px;line-height:14px;}
-.askdocContent h6 { font-size:14px; line-height:16px;}
-/*  /Harshika 15/07/15 */
+    /*  Harshika 15/07/15 */
+    .askdocContent{ width:100%;}
+    .selection,select option{font-size:12px;line-height:14px;}
+    .askdocContent h6 { font-size:14px; line-height:16px;}
+    /*  /Harshika 15/07/15 */
 
-/**** css for ambulancePage (added by ab on 24aug15) ****/
-.forAmb .textInput {float:none;width:auto;margin-bottom:10px;}
-.forAmb .textInput.pinCode {margin-bottom: 10px;}
-.forAmb .submitBttn {float:none;text-align:center;width:auto;}
-.forAmb .submitBttn button {font-size: 18px;line-height: 36px;width: 40%;}
-.ambulancePage .left1_data {float: none;text-align:center;}
-.ambulancePage .left1_data img{width:40%;}
-.ambulancePage .middle_data {float:none;text-align:center;width:auto;}
-.ambulancePage .ambu_add p {font-size: 18px;line-height: 20px;}
-.ambulancePage .ambu_area p {font-size: 20px;line-height: 22px;}
-.ambulancePage .ambu_name {font-size: 22px;line-height: 28px;}
-.ambulancePage .right_data {float: none;width:auto;text-align:center;padding-top:30px;}
-.ambulancePage .right_data a {font-size:18px;line-height:20px;}
-.ambulancePage .right_data .userReviewCont a {padding:0;background-position:26% 0;}
-.ambulancePage .right_data .contactCont a {padding:0;background-position:26% 0;background-size:5% auto;}
-.ambulancePage .contactCont {padding: 10px 0;}
-.ambulancePage .detailsCont {padding: 4%;}
-.submitBttn.enquireCont button {width:45%;font-size:18px;}
-/****** css for ambulancePage ends *****/
+    /**** css for ambulancePage (added by ab on 24aug15) ****/
+    .forAmb .textInput {float:none;width:auto;margin-bottom:10px;}
+    .forAmb .textInput.pinCode {margin-bottom: 10px;}
+    .forAmb .submitBttn {float:none;text-align:center;width:auto;}
+    .forAmb .submitBttn input {font-size: 18px;line-height: 36px;width: 40%;}
+    .ambulancePage .left1_data {float: none;text-align:center;}
+    .ambulancePage .left1_data img{width:40%;}
+    .ambulancePage .middle_data {float:none;text-align:center;width:auto;}
+    .ambulancePage .ambu_add p {font-size: 18px;line-height: 20px;}
+    .ambulancePage .ambu_area p {font-size: 20px;line-height: 22px;}
+    .ambulancePage .ambu_name {font-size: 22px;line-height: 28px;}
+    .ambulancePage .right_data {float: none;width:auto;text-align:center;padding-top:30px;}
+    .ambulancePage .right_data a {font-size:18px;line-height:20px;}
+    .ambulancePage .right_data .userReviewCont a {padding:0;background-position:26% 0;}
+    .ambulancePage .right_data .contactCont a {padding:0;background-position:26% 0;background-size:5% auto;}
+    .ambulancePage .contactCont {padding: 10px 0;}
+    .ambulancePage .detailsCont {padding: 4%;}
+    .submitBttn.enquireCont input {width:45%;font-size:18px;}
+    /****** css for ambulancePage ends *****/
 
 }
 
@@ -294,63 +294,63 @@ ul li{list-style-type:none;}
 
 /**** patches *****/
 @media all and (min-device-width: 810px) and (max-device-width: 940px){
-.nav {margin-left: 3%;}
-.searchCont { padding: 0 4%;}
-.ambulancePage .middle_data {padding: 0 0 0 2%;}/** added by ab on 24aug15 ***/
+    .nav {margin-left: 3%;}
+    .searchCont { padding: 0 4%;}
+    .ambulancePage .middle_data {padding: 0 0 0 2%;}/** added by ab on 24aug15 ***/
 
 }
 
 @media all and (min-device-width: 640px) and (max-device-width: 810px){
-.nav ul li p a {font-size: 11px;}
-.nav {margin-left: 1%;width: 53%;}
-.searchCont {width:28px;height:28px;padding: 0 4%;}
-.phoneCont {width:28px;height:28px;}
-.nav ul li {width:16%}
-.nav ul li.firstItem	{width: 22%;}
-.nav ul li.lastItem {width: 27%;}
-.logoCont {padding-left: 1%;}
-.serItem1 a img,.serItem2 a img{width:100%;}
-.blogCont .serItems .serIconText {width: 90%;}
-.serIconText p a {font-size: 12px}
-.blogCont .serIconCont a img {width:100%;}
-.whyusContent p {font-size: 16px;}
-.footRow ul li p a {font-size: 12px;}
-.footRow {padding: 0 0 0 1%;width: 24%;}
-.firstList {width: 37%;}
-.secondList {width: 63%;}
-.footRow2 p {padding: 0 0 10px 20%;}
-.footRow4 p a {font-size: 12px;}
-.footRow4 p {font-size: 12px;padding-left:15%;}
-.submitBttn button {font-size: 12px;}
-.footRow h2 {font-size: 15px;}
-.topRightPart div.topBarText	{width:16%;}
-/*  Harshika 15/07/15 */
-.askdocContent{ width:60%;}
-/*  /Harshika 15/07/15 */
+    .nav ul li p a {font-size: 11px;}
+    .nav {margin-left: 1%;width: 53%;}
+    .searchCont {width:28px;height:28px;padding: 0 4%;}
+    .phoneCont {width:28px;height:28px;}
+    .nav ul li {width:16%}
+    .nav ul li.firstItem	{width: 22%;}
+    .nav ul li.lastItem {width: 27%;}
+    .logoCont {padding-left: 1%;}
+    .serItem1 a img,.serItem2 a img{width:100%;}
+    .blogCont .serItems .serIconText {width: 90%;}
+    .serIconText p a {font-size: 12px}
+    .blogCont .serIconCont a img {width:100%;}
+    .whyusContent p {font-size: 16px;}
+    .footRow ul li p a {font-size: 12px;}
+    .footRow {padding: 0 0 0 1%;width: 24%;}
+    .firstList {width: 37%;}
+    .secondList {width: 63%;}
+    .footRow2 p {padding: 0 0 10px 20%;}
+    .footRow4 p a {font-size: 12px;}
+    .footRow4 p {font-size: 12px;padding-left:15%;}
+    .submitBttn input {font-size: 12px;}
+    .footRow h2 {font-size: 15px;}
+    .topRightPart div.topBarText	{width:16%;}
+    /*  Harshika 15/07/15 */
+    .askdocContent{ width:60%;}
+    /*  /Harshika 15/07/15 */
 
-.ambulancePage .middle_data {width: 41%;} /** added by ab on 24aug15 ***/
-.ambulancePage .right_data {width: 22%;margin-right:0;}/** added by ab on 24aug15 ***/
+    .ambulancePage .middle_data {width: 41%;} /** added by ab on 24aug15 ***/
+    .ambulancePage .right_data {width: 22%;margin-right:0;}/** added by ab on 24aug15 ***/
 
 }
 
 @media all and (max-device-width: 315px){
-.topRightPart p a {font-size: 9px;}
-.footRow2 p, .newsletter p {padding: 0 0 10px 30%;font-size:11px}/*added on 23aug2015 by ab */
+    .topRightPart p a {font-size: 9px;}
+    .footRow2 p, .newsletter p {padding: 0 0 10px 30%;font-size:11px}/*added on 23aug2015 by ab */
 }
 
 @media all and (min-device-width: 400px) and (max-device-width: 450px){
-.serItem7 a img,.serItem8 a img,.serItem9 a img {width:auto;}
-.ambulancePage .right_data .userReviewCont a {background-position:31% 0;}/** added by ab on 24aug15 ***/
-.ambulancePage .right_data .contactCont a {background-position:31% 0;}/** added by ab on 24aug15 ***/
+    .serItem7 a img,.serItem8 a img,.serItem9 a img {width:auto;}
+    .ambulancePage .right_data .userReviewCont a {background-position:31% 0;}/** added by ab on 24aug15 ***/
+    .ambulancePage .right_data .contactCont a {background-position:31% 0;}/** added by ab on 24aug15 ***/
 }
 /***** patches end ***/
 
 
 /*** 16-09-2015 Added By Punit****/
 .division{
-	width:100%;
-	height:5px;
-	background-color: #E9EAED;
+    width:100%;
+    height:5px;
+    background-color: #E9EAED;
 }
 .pac-container:after{
     content:none !important;
@@ -361,13 +361,14 @@ ul li{list-style-type:none;}
 #overlay {
     position: fixed;
     left: 25%;
-    top: 25%;
-    padding: 25px;
-    border: 2px solid black;
-    background-color: #ffffff;
-    width: 50%;
-    height: 50%;
-    z-index: 100;
+    width: 620px;
+    height: auto;
+    margin-left: 0px;
+    background-color: white;
+    z-index: 6;
+    padding: 0px 20px;
+    border: solid 5px #333333;
+    border-radius: 13px;
 }
 #fade {
     position: fixed;
@@ -380,6 +381,31 @@ ul li{list-style-type:none;}
     width: 100%;
     height: 100%;
     z-index: 90;
+}
+#popup_sign h3{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#666666;
+    margin:0;
+    padding:5px 0;
+    text-align:left;
+}
+#popup_sign p{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#666666;
+    margin:0;
+    padding:5px;
+    text-align:justify;
+}
+#popup_sign a{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#666666;
+    margin:0;
+    padding:5px;
+    text-align:right;
+    float:right;
 }
 
 #custom-modal.ng-enter {
@@ -416,6 +442,375 @@ textarea {
 }
 p label{
     clear: both; font-weight: bold; font-size: 20px; color: rgb(119, 212, 74);
+}
+#popup  .login-wrap {
+    padding: 20px;
+}
+#popup  .login-wrap .registration {
+    text-align: center;
+}
+#popup  .login-social-link {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#popup  .form-control {
+    display: block;
+    width: 94%;
+    height: 25px;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+#popup  .form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+#popup  .form-control::-moz-placeholder {
+    color: #777;
+    opacity: 1;
+}
+#popup  .form-control:-ms-input-placeholder {
+    color: #777;
+}
+#popup  .form-control::-webkit-input-placeholder {
+    color: #777;
+}
+#popup  .form-control[disabled],
+#popup  .form-control[readonly],
+fieldset[disabled] .form-control {
+    cursor: not-allowed;
+    background-color: #eee;
+    opacity: 1;
+}
+
+#popup  .btn-theme {
+    color: #fff;
+    background-color: #68dff0;
+    border-color: #48bcb4;
+}
+#popup  .btn-theme:hover,
+#popup  .btn-theme:focus,
+#popup  .btn-theme:active,
+#popup  .btn-theme.active,
+#popup  .open .dropdown-toggle.btn-theme {
+    color: #fff;
+    background-color: #48bcb4;
+    border-color: #48bcb4;
+}
+
+#popup  .btn-block {
+    display: block;
+    width: 285px;
+}
+
+#popup  .btn {
+    display: block;
+    padding: 6px 12px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+#popup  .radio, #popup  .checkbox {
+    position: relative;
+    display: block;
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#popup  label {
+    max-width: 100%;
+}
+
+#popup  label {
+    font-weight: 400;
+}
+
+.bannerContent  input.fsearch
+{
+    width: 500px;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #CE0E0F !important;
+}
+
+.bannerContent  .btn-lg
+{
+    background: transparent url("../images/isearch.jpg") no-repeat scroll 0px -1px;
+    width: 49px;
+    height: 51px;
+    border: 0px solid #D42B2C !important;
+    margin-left: -4px;
+    padding: 11px;
+}
+
+.bannerContent  .ubtn
+{
+    padding: 10px 8px;
+    font-size: 17px;
+    line-height: 1.3;
+    border: 1px solid #D42B2C !important;
+    background: #D42B2C;
+    color: #fff;
+    float: right;
+    margin-right: 3px;
+    margin-top: 1px;
+    border-radius: 4px;
+
+}
+
+.bannerContent  .upload_sec
+{
+    margin-top: 20px;
+}
+
+.bannerContent .bgclr-litgry {
+    background: #f9f9f9;
+    padding: 2% 6%;
+    margin-top: 2%;
+    height: auto;
+    overflow: hidden;
+}
+
+.bannerContent .container-left
+{
+    float: left;
+    padding-right: 15px;
+    border-right: 1px dotted rgb(206, 14, 15) !important;
+    margin-right: 15px;
+    overflow: hidden;
+    width: 70%;
+}
+
+.bannerContent .container-right
+{
+
+    font-size: 18px;
+    margin-top: 31px;
+}
+
+.bannerContent .container-right ul
+{
+    margin: 24px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+
+.bannerContent .container-right ul li
+{
+    padding-left: 27px;
+    line-height: 23px;
+    list-style-type: none;
+    background: url("../images/arrow_12345.png") 0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    padding-bottom: 6px;
+}
+
+/*
+Generic Styling, for Desktops/Laptops
+*/
+
+table {
+    width: 100%;;
+    border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+th {
+    background: #D42B2C;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    padding: 6px;
+    border: 1px solid #D42B2C;
+    text-align: left;
+    font-size:13px;
+}
+
+
+/*
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr:nth-of-type(2n+1) {
+        background: #D42B2C none repeat scroll 0 0;
+        color:#fff;
+    }
+
+    tr { border: 1px solid #ccc; }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before { content: "Name :"; }
+    td:nth-of-type(2):before { content: "Form :"; }
+    td:nth-of-type(3):before { content: "Pack Size :"; }
+    td:nth-of-type(4):before { content: "MRP :"; }
+    td:nth-of-type(5):before { content: "Wars of Trek?"; }
+    td:nth-of-type(6):before { content: "Porn Name"; }
+    td:nth-of-type(7):before { content: "Date of Birth"; }
+    td:nth-of-type(8):before { content: "Dream Vacation City"; }
+    td:nth-of-type(9):before { content: "GPA"; }
+    td:nth-of-type(10):before { content: "Arbitrary Data"; }
+}
+
+
+/*----- Tabs -----*/
+.tabs input[type=radio] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.tabs {
+    width: 300px;
+    float: none;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: -10px auto !important;
+}
+.tabs li{
+    float: left !important;
+    padding-left: 0px !important;
+    line-height: 0px  !important;
+    list-style-type: none !important;
+    background: none !important;
+    width: auto !important;
+    height: auto !important;
+    padding-bottom: 0px !important;
+}
+.tabs label {
+    display: block;
+    padding: 12px 10px;
+    border-radius: 2px 2px 0 0;
+    color: #08C;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Roboto', helveti;
+    background: rgba(255,255,255,0.2);
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.tabs label:hover {
+    background: rgba(255,255,255,0.5);
+    top: 0;
+}
+
+[id^=tab]:checked + label {
+    background: #D42B2C;
+    color: white;
+    top: 0;
+}
+
+[id^=tab]:checked ~ [id^=tab-content] {
+    display: block;
+}
+.tab-content{
+    z-index: 2;
+    display: none;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    line-height: 140%;
+    padding-top: 10px;
+    background: none;
+    padding: 15px;
+    color: #000;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    box-sizing: border-box;
+    -webkit-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.tab-content p{
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.tab-content h4{
+    font-size: 14px;
+}
+
+.fieldwrapper{
+    white-space: nowrap;
 }
 
 p input[type="text"], input[type="email"], input[type="number"], select {
