@@ -553,12 +553,11 @@ fieldset[disabled] .form-control {
     font-weight: 400;
 }
 
-.bannerContent  input.fsearch
+md-autocomplete input:not(.md-input)
 {
     width: 500px;
     height: 20px;
     padding: 10px;
-    border: 1px solid #CE0E0F !important;
 }
 
 .bannerContent  .btn-lg
@@ -567,7 +566,6 @@ fieldset[disabled] .form-control {
     width: 49px;
     height: 51px;
     border: 0px solid #D42B2C !important;
-    margin-left: -4px;
     padding: 11px;
 }
 
