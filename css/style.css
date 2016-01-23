@@ -627,7 +627,6 @@ md-autocomplete input:not(.md-input)
     line-height: 23px;
     list-style-type: none;
     background: url("../images/arrow_12345.png") 0 0 no-repeat;
-    width: 20px;
     height: 20px;
     padding-bottom: 6px;
 }

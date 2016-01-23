@@ -9,7 +9,17 @@
             self.querySearch = querySearch;
             self.selectedItemChange = selectedItemChange;
             self.searchTextChange = searchTextChange;
+            $scope.medicineDetails = {
+                name: '',
+                category: '',
+                dClass: '',
+                unitQty: '',
+                packageQty: '',
+                packagePrice: '',
+                unitPrice: ''
+            };
 
+            $scope.alternatives;
             var headers = {
                 "Authorization": "Basic ZGF3YWFpaTokMmEkMTEkZ3hwbmV6bVlmTkpSWW53L0VwSUs1T2UwOFRsd1pEbWNtVWVLa3JHY1NHR0hYdldheFV3UTI=",
                 "Content-Type": "application/json",
@@ -36,10 +46,22 @@
             }
 
             function selectedItemChange(item) {
+                $scope.medicineDetails.name = item;
                 $log.info('Item changed to ' + JSON.stringify(item));
-                $http.get('http://localhost:8080/api/rest/medicines/' + item, {headers: headers})
+                $http.get('http://localhost:8080/api/rest/medicines/detail/' + item, {headers: headers})
                     .success(function (response) {
-                        response.data.details;
+                        $log.info(response);
+                        var res = response.data.details;
+                        if (res) {
+                            $log.info(res);
+                            $scope.medicineDetails.category = res.category;
+                            $scope.medicineDetails.dClass = res.dClass;
+                            $scope.medicineDetails.unitQty = res.unitQty;
+                            $scope.medicineDetails.packageQty = res.packageQty;
+                            $scope.medicineDetails.packagePrice = res.packagePrice;
+                            $scope.medicineDetails.unitPrice = res.unitPrice;
+                            $scope.alternatives = res.alternatives;
+                        }
                     }).error(function (error) {
                         console.log(error);
                     });
