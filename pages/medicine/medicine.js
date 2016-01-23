@@ -30,7 +30,7 @@
             function querySearch(query) {
                 if (query) {
                     var defer = $q.defer();
-                    $http.get('http://localhost:8080/api/rest/medicines/' + query, {headers: headers})
+                    $http.get('http://205.147.97.187:8080/api/rest/medicines/' + query, {headers: headers})
                         .success(function (response) {
                             defer.resolve(response.data.suggestions);
                         }).error(function (error) {
@@ -56,7 +56,7 @@
                 $scope.alternatives = '';
 
                 $log.info('Item changed to ' + JSON.stringify(item));
-                $http.get('http://localhost:8080/api/rest/medicines/detail/' + item, {headers: headers})
+                $http.get('http://205.147.97.187:8080/api/rest/medicines/detail/' + item, {headers: headers})
                     .success(function (response) {
                         $log.info(response);
                         var res = response.data.details;
