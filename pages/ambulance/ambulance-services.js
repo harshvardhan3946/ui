@@ -107,7 +107,7 @@
                 bookData.email = $scope.email;
                 bookData.number = $scope.contact;
                 //now give a post request to book ambulance
-                $http.post('http://205.147.97.187:8080/api/rest/ambulances/book', bookData, {
+                $http.post('http://205.147.97.187/api/rest/ambulances/book', bookData, {
                     headers: headers
                 }).success(function (response) {
                     console.log(response);
