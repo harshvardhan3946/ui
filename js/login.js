@@ -31,7 +31,7 @@ angular.module('login', ['ngRoute']).config(function ($routeProvider, $httpProvi
                 grant_type: "password"
             } : {};
             if (credentials)
-                $http.post('http://205.147.97.187:8080/api/rest/oauth/token?grant_type=password&username=' + data.username + '&password=' + data.password, data, {
+                $http.post('http://205.147.97.187/api/rest/oauth/token?grant_type=password&username=' + data.username + '&password=' + data.password, data, {
                     headers: headers
                 }).success(function (response) {
                     console.log(response);

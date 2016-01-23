@@ -21,7 +21,7 @@
             };
 
             //common header for rest calls
-            var url = 'http://205.147.97.187:8080/api/rest/ambulances';
+            var url = 'http://205.147.97.187/api/rest/ambulances';
             var headers = {
                 "Authorization": "Basic ZGF3YWFpaTokMmEkMTEkZ3hwbmV6bVlmTkpSWW53L0VwSUs1T2UwOFRsd1pEbWNtVWVLa3JHY1NHR0hYdldheFV3UTI=",
                 "Content-Type": "application/json",
@@ -36,7 +36,7 @@
             $scope.update = function () {
                 var ts = (new Date()).getTime();
                 var totalAmbulances = $scope.ambulances.length;
-                $http.get('http://205.147.97.187:8080/api/rest/ambulances/updates/' + (ts - 10000), {headers: headers})
+                $http.get('http://205.147.97.187/api/rest/ambulances/updates/' + (ts - 10000), {headers: headers})
                     .success(function (response) {
                         var ambulances = response.data.Ambulances;
                         for (var i = 0; i < ambulances.length; i++) {
