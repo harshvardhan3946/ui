@@ -47,6 +47,14 @@
 
             function selectedItemChange(item) {
                 $scope.medicineDetails.name = item;
+                $scope.medicineDetails.category = '';
+                $scope.medicineDetails.dClass = '';
+                $scope.medicineDetails.unitQty = '';
+                $scope.medicineDetails.packageQty = '';
+                $scope.medicineDetails.packagePrice = '';
+                $scope.medicineDetails.unitPrice = '';
+                $scope.alternatives = '';
+
                 $log.info('Item changed to ' + JSON.stringify(item));
                 $http.get('http://localhost:8080/api/rest/medicines/detail/' + item, {headers: headers})
                     .success(function (response) {
